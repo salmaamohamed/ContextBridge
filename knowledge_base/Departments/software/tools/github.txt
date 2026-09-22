@@ -1,0 +1,60 @@
+# GitHub Platform Tool Guide & Collaboration Standards
+
+## 1. Executive Summary and Platform Purpose
+GitHub serves as the central collaboration platform for ContextBridge engineering, hosting source code repositories, managing pull requests, automating continuous integration (CI) and continuous deployment (CD) workflows through GitHub Actions, tracking security vulnerabilities, and enforcing governance policies. Proper utilization of GitHub ensures transparency, code quality, secure access control, and seamless integration across engineering, data, and DevOps workflows.
+
+## 2. Core GitHub Concepts and Organization Structure
+Navigating the ContextBridge GitHub enterprise organization requires familiarity with core platform concepts:
+* **Organizations and Teams:** Repositories are grouped under the enterprise organization (`ContextBridge`). Access permissions are managed via team memberships (e.g., `backend-engineers`, `frontend-engineers`, `data-scientists`) adhering strictly to the principle of least privilege.
+* **Repositories:** Isolated projects containing source code, documentation, issue trackers, wiki pages, and GitHub Actions workflow configurations.
+* **Pull Requests (PRs):** The primary mechanism for proposing, reviewing, discussing, and merging code changes from feature branches into the protected `main` branch.
+* **Issues:** Used for tracking bugs, feature requests, and technical debt items, cross-linked directly with Jira tasks for end-to-end traceability.
+* **Branch Protection Rules:** Automated rules enforced on critical branches (`main`) requiring passing status checks, mandatory code reviews, and linear history constraints before merging.
+
+## 3. Pull Request Best Practices and Review Workflows
+Pull requests on GitHub are collaborative spaces where code quality is verified:
+* **Template Compliance:** Every PR description must follow the standard ContextBridge template, linking the corresponding Jira ticket, summarizing technical changes, and providing testing evidence.
+* **Draft PRs:** When working on experimental or incomplete code that requires early feedback or CI validation, open the pull request as a "Draft PR" to prevent premature reviews.
+* **Reviewer Assignment:** Request reviews from designated code owners and relevant team members. Ensure reviewers are not overloaded by distributing reviews evenly across the team.
+* **Status Checks:** Verify that all automated GitHub Actions checks (linting, tests, security scans) pass with green checkmarks before requesting final merger approval.
+
+## 4. GitHub Actions CI/CD Automation
+ContextBridge leverages GitHub Actions for automated workflow execution on every repository push and pull request:
+* **Continuous Integration Workflows:** Automatically spin up containerized runners to execute unit test suites, run static code analysis (`flake8`, ESLint, mypy), and check third-party dependencies for known CVEs.
+* **Security Scanning Workflows:** Dependabot and secret scanning alerts run continuously to detect vulnerable package versions or accidental API key leaks.
+* **Deployment Workflows:** Trigger automated container builds and deployments to staging or production environments upon successful merges into `main`.
+
+## 5. Security and Access Control Governance
+Maintaining enterprise security on GitHub requires strict adherence to access guidelines:
+* **Multi-Factor Authentication (MFA):** All engineering accounts linked to the ContextBridge GitHub organization must have mandatory hardware-backed or authenticator app MFA enabled.
+* **Personal Access Tokens (PATs):** Never hardcode PATs or SSH keys. Use fine-grained tokens with minimal required scopes and set expiration dates not exceeding 90 days.
+* **Repository Visibility:** Internal repositories are accessible to all authenticated company employees, while proprietary core repositories have restricted access governed by role-based team permissions.
+
+## 6. Common GitHub Troubleshooting Scenarios
+* **Stuck Status Checks:** If a GitHub Actions workflow hangs or fails to trigger, check repository webhook configurations, verify YAML syntax in `.github/workflows/`, or manually re-run the failed job.
+* **Permission Denied (git push/clone):** Verify that your local SSH key is correctly added to your GitHub account settings and authenticated via `ssh -T git@github.com`.
+
+## 7. Related Tools and Technologies
+* **Version Control:** Git, GitHub CLI (`gh`).
+* **Automation:** GitHub Actions, Dependabot.
+* **Project Tracking:** Jira, GitHub Issues.
+
+## 8. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/processes/code_review.txt`
+* `departments/software/tools/git.txt`
+* `recurring_problems/account_access.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: PUBLIC_PARAPHRASED
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Collaboration Platform
+Topic: GitHub Platform Management, Pull Requests, Actions, and Security
+Source: GitHub Documentation
+Source URL: https://docs.github.com/
+Access Level: Internal
+Last Verified: 2026-09-22

@@ -1,0 +1,69 @@
+# Code Review Process & Engineering Standards
+
+## 1. Executive Summary and Philosophy
+Code reviews are a cornerstone of engineering quality, security, and knowledge sharing at ContextBridge. They are not designed as bureaucratic gatekeeping mechanisms, but rather as collaborative technical discussions that ensure code correctness, maintainability, architectural consistency, and adherence to security baselines. Every pull request (PR) merging into the `main` branch must undergo rigorous peer review. This document outlines the expectations, responsibilities, workflows, and standards for both pull request authors and code reviewers.
+
+## 2. Code Review Objectives
+The primary goals of the ContextBridge code review process include:
+* **Defect Prevention:** Catching logical bugs, edge-case failures, performance bottlenecks, and security vulnerabilities before code reaches staging or production environments.
+* **Knowledge Distribution:** Sharing domain expertise across team members so that no single service or component is maintained by only one person.
+* **Architecture and Style Consistency:** Ensuring that new code adheres strictly to established design patterns, coding conventions, and linter rules.
+* **Security Compliance:** Verifying that secrets are never exposed, inputs are properly sanitized, and authorization boundaries are correctly enforced.
+
+## 3. Responsibilities of the Pull Request Author
+Before requesting a peer review, the author must complete a thorough self-evaluation and prepare the PR for effortless review:
+* **Self-Review:** The author must review their own diff line by line before assigning reviewers, catching obvious typos, leftover debug print statements, or accidental file modifications.
+* **Scoped Changes:** Keep pull requests small and focused (ideally under 400 lines of changed code). Monolithic PRs spanning multiple unrelated features should be split into smaller, sequential PRs.
+* **Comprehensive Description:** Fill out the standard PR template explaining the business motivation, technical design choices, testing performed, and any database migration impacts.
+* **Passing CI Checks:** Ensure all automated CI pipelines (linters, unit tests, security scans, type checks) pass successfully before requesting human reviews. PRs with failing checks will not be reviewed.
+* **Prompt Iteration:** Respond to reviewer comments constructively, push requested changes promptly, and re-request reviews when modifications are complete.
+
+## 4. Responsibilities of the Code Reviewer
+Reviewers act as technical guardians and collaborative mentors, balancing thoroughness with speed:
+* **SLA and Turnaround Time:** Reviewers should acknowledge and complete code reviews within one business day (24 hours) to prevent engineering bottlenecks and stale branches.
+* **Focus on Substance over Style:** Leave formatting, trailing whitespace, and naming style nitpicks to automated linters. Human reviewers should focus on:
+  * Algorithm correctness, edge cases, and concurrency safety.
+  * Security vulnerabilities (e.g., SQL injection, insecure deserialization, secret leaks).
+  * Performance concerns (e.g., N+1 query problems, inefficient loops, missing database indexes).
+  * Test coverage adequacy and test case quality.
+* **Constructive Tone:** Phrase feedback respectfully and clearly. Differentiate between mandatory blockers (e.g., security flaws, breaking bugs) and optional suggestions (e.g., refactoring ideas, cleaner syntax alternatives).
+* **Approval Criteria:** Only approve a PR when all concerns are addressed, tests pass, and the code meets production-grade standards.
+
+## 5. Handling Disagreements and Escalations
+Technical disagreements during code reviews are natural and should be resolved professionally:
+* **Discussion First:** Engage in a constructive technical discussion within the PR comment thread, focusing on data, performance metrics, or architectural documentation.
+* **In-Person / Sync Sync:** If a comment thread exceeds three back-and-forth messages without resolution, schedule a brief 10-minute video call or pair programming session to resolve the disagreement quickly.
+* **Escalation to Tech Lead:** If agreement cannot be reached between author and reviewer, escalate the decision to the principal engineer or department tech lead, whose ruling is final.
+
+## 6. Security and Secret Leak Prevention Checklist
+Reviewers and authors must pay special attention to security risks during every review:
+* **Hardcoded Secrets:** Verify that no API keys, database connection strings, SSH keys, or access tokens are present in the code diff or configuration files.
+* **Input Validation:** Ensure all user inputs and API payloads are strictly validated using schema libraries (e.g., Pydantic, Zod) to prevent injection attacks.
+* **Access Control:** Verify that proper authentication tokens are validated and role-based access control (RBAC) checks are enforced on all new endpoints.
+
+## 7. Common Code Review Anti-Patterns to Avoid
+* **Rubber-Stamping:** Approving a massive PR instantly without reading the code simply to help a teammate merge quickly. This bypasses quality gates and introduces production risks.
+* **Ghosting:** Leaving a PR unreviewed for days without communication, halting the author's progress and blocking downstream deployments.
+* **Nitpicking Over Architecture:** Spending hours debating variable names while ignoring critical architectural flaws or missing error handling paths.
+
+## 8. Related Tools and Technologies
+* **Platform:** GitHub Pull Requests, GitHub Actions CI.
+* **Linters & Analysis:** flake8, Black, mypy, ESLint, Prettier, SonarQube.
+
+## 9. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/tools/github.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: PUBLIC_PARAPHRASED
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Infrastructure & Engineering Standards
+Topic: Code Review Process, Standards, and Best Practices
+Source: UK Home Office Engineering Guidance and Standards
+Source URL: https://github.com/UKHomeOffice/engineering-guidance-and-standards
+Access Level: Internal
+Last Verified: 2026-09-22

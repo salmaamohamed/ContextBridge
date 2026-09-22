@@ -1,0 +1,51 @@
+# Jira Project Tracking Tool Guide & Workflow Standards
+
+## 1. Executive Summary and Tool Purpose
+Jira is the enterprise project management and issue-tracking platform utilized across ContextBridge to plan sprints, track task lifecycles, manage bug reports, estimate engineering effort, and maintain traceability between product requirements and source code commits. Every technical task, feature request, and bug fix must originate as a Jira ticket before any code is written. This ensures complete alignment between product management, engineering, and quality assurance teams.
+
+## 2. Core Jira Terminology and Structure
+Understanding Jira's hierarchical structure is essential for navigating daily work:
+* **Projects:** High-level containers representing specific product domains or business units (e.g., `PROJ` for Core Platform, `DATA` for Data Engineering).
+* **Issue Types:** Categorizations of work items, including Epics (large initiatives), Stories (user-facing features), Tasks (technical work items), and Bugs (defect reports).
+* **Sprints:** Time-boxed iteration cycles (typically two weeks) during which teams commit to completing a specific subset of backlog items.
+* **Epics:** Strategic collections of related user stories and tasks spanning multiple sprints.
+
+## 3. Company-Specific Jira Workflow and Statuses
+Note that Jira workflows, statuses, and transition rules are strictly company-specific to ContextBridge and tailored to our engineering lifecycle:
+* **Backlog:** Newly created issues awaiting triage, refinement, and prioritization by product managers and tech leads.
+* **Selected for Development:** Groomed and estimated tickets ready to be pulled into an active sprint by engineers.
+* **In Progress:** Active development is underway on a feature branch linked to the Jira ticket.
+* **In Review / Pull Request:** Code is written, tested, and a GitHub pull request is open awaiting peer review.
+* **Staging Verification:** Code is merged into `main`, deployed to staging, and undergoing QA sign-off.
+* **Done:** Successfully verified in production and closed.
+
+## 4. Ticket Hygiene and Best Practices
+Maintaining clean Jira tickets ensures effective sprint tracking and RAG retrieval accuracy:
+* **Descriptive Summaries:** Ticket titles must be concise yet descriptive (e.g., "Implement JWT authentication middleware for FastAPI backend").
+* **Acceptance Criteria:** Every ticket must feature clear, bulleted acceptance criteria defining when the task is considered complete.
+* **Branch Linking:** Always link your GitHub feature branch and pull request directly to the Jira issue key (e.g., including `PROJ-1024` in branch names and PR titles) to enable automatic status transitions.
+
+## 5. Common Jira Anti-Patterns
+* **Zombie Tickets:** Leaving tickets in "In Progress" for weeks without status updates or blocker comments. Update ticket statuses daily or move them back to the backlog if deprioritized.
+* **Untracked Work:** Writing code or fixing bugs without a corresponding Jira ticket. All engineering effort must be traceable to a tracked task.
+
+## 6. Related Tools and Technologies
+* **Integration:** GitHub (via Smart Commits and branch linking), Confluence.
+
+## 7. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/tools/github.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: SYNTHETIC_COMPANY
+Department: Software
+Role: All Software Engineering Roles
+Project: Internal Project Management
+Topic: Jira Issue Tracking, Workflow States, and Ticketing Standards
+Source: ContextBridge Demo Company
+Source URL: N/A
+Access Level: Internal
+Last Verified: 2026-09-22

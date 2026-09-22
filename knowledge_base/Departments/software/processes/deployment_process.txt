@@ -1,0 +1,73 @@
+# Software Deployment Process & Release Management
+
+## 1. Executive Summary and Objectives
+The ContextBridge Deployment Process governs the secure, predictable, and automated promotion of software services from local development environments through continuous integration (CI), staging validation, and production release. Grounded in infrastructure-as-code (IaC) principles, containerized deployments, and automated testing gates, this process ensures zero-downtime releases, rapid rollback capabilities, and strict audit compliance. Every engineer is expected to understand deployment lifecycles, environment promotion rules, and incident remediation procedures.
+
+## 2. Release Engineering Principles
+Our deployment strategy adheres to core industry standards:
+* **Automation-First:** Manual deployments via local terminals are strictly prohibited in production. All deployments are executed via automated CI/CD pipelines governed by GitHub Actions.
+* **Environment Parity:** Staging environments mirror production architecture as closely as possible (utilizing identical container images, environment variables, and database configurations) to catch environment-specific bugs early.
+* **Immutable Infrastructure:** Containers and infrastructure components are treated as immutable. Rather than patching running servers in place, we build new container images, test them, and deploy them atomically.
+* **Observable Rollouts:** Every deployment is monitored in real time via centralized metrics dashboards and error-tracking alerts.
+
+## 3. Deployment Pipeline Stages
+The journey of code from a pull request merge to production execution follows four distinct automated stages:
+
+### Stage A: Build and Artifact Generation
+* Triggered immediately upon merging a pull request into the `main` branch.
+* Executes comprehensive test suites and security scans.
+* Builds standardized Docker container images tagged with the specific Git commit SHA and semantic version number.
+* Pushes verified container artifacts to the secure enterprise container registry.
+
+### Stage B: Staging Deployment and Automated Verification
+* Automatically pulls the newly minted container image and deploys it to the staging cluster.
+* Executes automated end-to-end (E2E) integration tests and API contract checks against the staging endpoints.
+* Notifies the engineering channel in Slack regarding staging deployment status.
+
+### Stage C: Manual Quality Assurance Sign-Off (When Applicable)
+* For major feature releases or breaking API schema changes, product managers or QA leads perform exploratory testing on staging.
+* Once verified, an authorized tech lead or release engineer approves the production promotion gate in the CI/CD dashboard.
+
+### Stage D: Production Deployment Strategies
+* **Rolling Updates:** For standard backend microservices, updates are deployed using rolling updates where pods/instances are replaced incrementally to maintain 100% uptime.
+* **Canary Deployments:** For high-risk architectural changes or core LLM orchestration pipelines, canary deployments route 5% of production traffic to the new version first, monitoring error rates and latency before scaling to 100%.
+
+## 4. Rollback Mechanisms and Disaster Recovery
+If a deployment introduces a critical regression, performance degradation, or security anomaly, the system must be restored to a stable state instantly:
+* **Automated Health Checks:** If HTTP 5xx error rates exceed 2% within 3 minutes of a production release, the CI/CD pipeline triggers an automatic abort and rolls back to the previous stable container image tag.
+* **Manual Emergency Rollback:** On-call engineers can execute an emergency rollback script via the deployment control panel or CLI, reverting production traffic to the last known stable version within 60 seconds.
+* **Post-Incident Review:** Any production rollback requires a mandatory blameless post-mortem within 48 hours to identify root causes and update automated test suites.
+
+## 5. Secret and Configuration Management During Deployment
+Secrets and configuration variables are never baked into container images:
+* Environment-specific variables (database URLs, API secrets, encryption keys) are injected securely at runtime via AWS Secrets Manager or Kubernetes Secret stores.
+* Configuration changes must follow the same pull request review process as application code.
+
+## 6. Common Deployment Anti-Patterns
+* **Friday Afternoon Deployments:** Deploying complex changes on Friday evenings is strictly prohibited unless addressing a critical P0 security incident, as it risks leaving services unmonitored over the weekend.
+* **Uncommunicated Database Migrations:** Deploying application code that expects a new database column before the migration script has been executed on the production database. Migrations must run and be verified prior to application container promotion.
+
+## 7. Related Tools and Technologies
+* **CI/CD:** GitHub Actions, ArgoCD.
+* **Containerization & Orchestration:** Docker, Kubernetes, Helm.
+* **Observability:** Datadog, Prometheus, Grafana, AWS CloudWatch.
+
+## 8. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/processes/code_review.txt`
+* `departments/software/tools/docker.txt`
+* `recurring_problems/system_access.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: PUBLIC_PARAPHRASED
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Infrastructure & Release Management
+Topic: Software Deployment Process, Staging Promotion, and Rollback Procedures
+Source: UK Home Office Engineering Guidance and Standards
+Source URL: https://github.com/UKHomeOffice/engineering-guidance-and-standards
+Access Level: Internal
+Last Verified: 2026-09-22

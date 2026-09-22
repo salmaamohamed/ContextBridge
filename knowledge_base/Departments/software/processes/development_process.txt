@@ -1,0 +1,85 @@
+# Software Development Process & Engineering Lifecycle
+
+## 1. Executive Summary and Process Objectives
+The ContextBridge Software Development Process defines the standardized lifecycle through which software requirements are translated into robust, secure, and testable production services. Grounded in trunk-based development principles, continuous integration (CI), and automated quality gates, this process ensures that engineering teams maintain high velocity without compromising system reliability, security compliance, or code maintainability. Every phase—from backlog grooming to production monitoring—is designed to provide clear feedback loops for new engineers and maintain predictable delivery cadences.
+
+## 2. Phase 1: Backlog Grooming, Planning, and Estimation
+Work originates in Jira and product management queues before entering the active engineering sprint cycle.
+
+* **Ticket Refinement:** Product managers, tech leads, and software engineers review user stories during bi-weekly grooming sessions to ensure acceptance criteria are crystal clear, technical dependencies are identified, and story points are estimated using Fibonacci sizing.
+* **Technical Spikes:** If a user story involves unfamiliar third-party APIs, high architectural risk, or novel AI integration patterns, engineers must create a time-boxed technical spike ticket (typically 1 to 2 days) to investigate feasibility before committing to full implementation.
+* **Definition of Ready (DoR):** A ticket cannot enter an active sprint unless it meets the DoR criteria: clear business value, documented acceptance criteria, attached UX/UI mockups (if applicable), and identified API contract dependencies.
+
+## 3. Phase 2: Branching Strategy and Local Implementation
+Once a sprint begins and a ticket is assigned, engineers initiate the coding phase following strict version control conventions.
+
+* **Trunk-Based Development Model:** We rely on a single primary branch (`main`) representing the current production-ready state. Long-lived feature branches are prohibited.
+* **Branch Naming Conventions:** Feature and bugfix branches must originate directly from the latest pulled `main` branch and adhere to the strict naming pattern: `<type>/<jira-ticket-id>-short-descriptive-slug` (e.g., `feature/PROJ-4521-add-vector-search-filter`).
+* **Local Development Environment:** Engineers must utilize Docker and Docker Compose to spin up local instances of databases, caches, and dependent microservices mirroring production configurations. Hardcoding local absolute paths or database connections is strictly forbidden.
+* **Test-Driven and Concurrent Testing:** Code must be written alongside corresponding unit tests. Developers are expected to execute local test suites (`pytest`, `Jest`) before pushing code to remote repositories.
+
+## 4. Phase 3: Pull Request Creation and Continuous Integration (CI)
+When local implementation is complete and verified, the code enters the review pipeline via GitHub.
+
+* **Pull Request Guidelines:** Open a pull request (PR) against `main`. The PR title must reference the Jira ticket (e.g., `[PROJ-4521] Add vector search filter endpoint`), and the PR description must follow the standard template detailing:
+  1. Summary of changes and business motivation.
+  2. Technical implementation details and architecture decisions.
+  3. Testing steps performed and test coverage verification.
+  4. Screenshots, API curl examples, or logs.
+* **Automated CI Pipeline Execution:** Opening or updating a PR automatically triggers GitHub Actions workflows that execute:
+  * Static code analysis, linters, and type checkers (`flake8`, `Black`, `mypy`, ESLint).
+  * Unit and integration test suites across multiple service configurations.
+  * Dependency vulnerability scanning (checking for CVEs in third-party packages).
+  * Container image build checks to verify Dockerfile validity.
+
+## 5. Phase 4: Peer Code Review and Quality Gates
+Code quality is maintained through mandatory peer reviews before any code can touch shared staging environments.
+
+* **Code Review Requirements:** Every pull request requires at least two formal approvals from designated code owners or senior engineers.
+* **Reviewer Responsibilities:** Reviewers evaluate code correctness, adherence to design patterns, security implications, performance bottlenecks, and test coverage adequacy. Nitpicky formatting feedback should be automated via linters, keeping human reviews focused on logic and architecture.
+* **Addressing Feedback:** The author must address all reviewer comments, resolve merge conflicts by rebasing against `main`, and re-request reviews when significant logic changes are introduced.
+
+## 6. Phase 5: Staging Deployment and Quality Assurance (QA)
+Upon successful PR approval and passing CI checks, the merge into `main` initiates automated downstream delivery.
+
+* **Staging Promotion:** Merging into `main` automatically triggers deployment to the staging environment via continuous deployment (CD) pipelines.
+* **Automated E2E Testing:** Staging deployments execute automated end-to-end integration test suites simulating user authentication, data ingestion, and core platform workflows.
+* **Manual QA Sign-Off:** For major feature releases, QA engineers and product managers verify functionality on the staging URL against original acceptance criteria before approving production release windows.
+
+## 7. Phase 6: Production Release and Post-Deployment Monitoring
+Releasing code into production follows structured deployment windows and real-time observability protocols.
+
+* **Release Strategies:** Production releases utilize rolling updates or canary deployments to minimize downtime and limit blast radius if anomalies occur.
+* **Observability and Metrics:** Engineers monitor application error rates, response latencies, CPU/memory utilization, and custom business metrics via centralized observability dashboards (e.g., Datadog, Grafana, CloudWatch).
+* **Incident Escalation:** If a production anomaly or regression is detected, the on-call engineer follows incident response protocols, utilizing automated rollback mechanisms to revert to the previous stable container image instantly if necessary.
+
+## 8. Common Bottlenecks and Process Anti-Patterns
+* **Monolithic Pull Requests:** Submitting massive PRs containing hundreds of changed files across multiple features, making code review excruciatingly slow and error-prone. *Rule:* Keep PRs small (under 400 lines of change) and scoped to a single logical task.
+* **Ignoring Failing CI Checks:** Attempting to bypass failing test suites or linter warnings by force-pushing or requesting manual overrides without fixing root causes.
+* **Stale Branches:** Failing to rebase active feature branches against `main` daily, leading to catastrophic merge conflicts at the end of feature development.
+
+## 9. Related Tools and Technologies
+* **Planning & Tracking:** Jira, Confluence.
+* **Version Control & CI/CD:** Git, GitHub, GitHub Actions.
+* **Containerization:** Docker, Docker Compose.
+* **Testing:** pytest, Jest, Cypress, Testcontainers.
+
+## 10. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/code_review.txt`
+* `departments/software/processes/deployment_process.txt`
+* `departments/software/tools/git.txt`
+* `departments/software/tools/github.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: PUBLIC_PARAPHRASED
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Infrastructure & Engineering Standards
+Topic: Software Development Process, Lifecycle, and Workflow Guidelines
+Source: UK Home Office Engineering Guidance and Standards
+Source URL: https://github.com/UKHomeOffice/engineering-guidance-and-standards
+Access Level: Internal
+Last Verified: 2026-09-22

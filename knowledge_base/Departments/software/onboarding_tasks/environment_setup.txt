@@ -1,0 +1,39 @@
+# Onboarding Task: Software Environment Setup
+
+## 1. Task Title and Executive Summary
+* **Task Title:** Comprehensive Software Development Environment Setup
+* **Estimated Completion Time:** 4 Hours (Day 1 of Onboarding)
+* **Target Audience:** All incoming software engineers, backend engineers, frontend engineers, and fullstack developers.
+* **Executive Summary:** This foundational onboarding task guides new software engineering employees through provisioning their company-issued workstation, installing mandatory command-line tooling, configuring secure authentication keys, and spinning up containerized local development stacks. Completing this task successfully ensures environment parity across the engineering department and prepares the newcomer to interact with core repositories and CI/CD pipelines.
+
+## 2. Goal and Why This Task Matters
+* **Primary Goal:** Establish a fully functional, secure, and containerized local development environment capable of running core ContextBridge services, unit test suites, and database migration tools.
+* **Why This Matters:** Software engineering relies heavily on consistency. Without a standardized local environment, developers encounter "it works on my machine" bugs, security vulnerabilities due to outdated local dependencies, and authentication failures when communicating with private enterprise container registries and GitHub repositories.
+
+## 3. Prerequisites
+Before initiating this task, ensure you have:
+* Received your company-issued MacBook Pro or Linux workstation with administrative privileges.
+* Received your official company Okta Single Sign-On (SSO) credentials and Google Workspace account.
+* Active membership in the ContextBridge GitHub enterprise organization and Jira workspace.
+
+## 4. Required Access and Tooling
+* **Access Rights:** GitHub Enterprise Organization access, Jira project board access, internal Vault secret manager permissions.
+* **Required Tools:** 
+  * Homebrew (macOS package manager) or apt (Linux package manager).
+  * Git (version control CLI).
+  * Docker Desktop / Docker Compose (container runtime).
+  * Python 3.11+ and Node.js LTS (runtime environments).
+  * Visual Studio Code or JetBrains PyCharm/WebStorm (IDE of choice).
+
+## 5. Step-by-Step Instructions
+
+### Step 1: Workstation Shell and Package Manager Configuration
+1. Open your terminal emulator and verify that Homebrew (or apt) is installed correctly by running `brew --version`.
+2. Configure your shell profile (`~/.zshrc` or `~/.bashrc`) to include standard path exports for development binaries.
+3. Install core command-line utilities required by automation scripts: `brew install git curl wget jq gh`.
+
+### Step 2: Version Control (Git) and SSH Key Configuration
+1. Configure your global Git user identity to match your company email address:
+   ```bash
+   git config --global user.name "Your Full Name"
+   git config --global user.email "your.name@contextbridge.com"

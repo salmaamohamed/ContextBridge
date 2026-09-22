@@ -1,0 +1,109 @@
+## 1. Task Title and Executive Summary
+* **Task Title:** Core Repository Cloning, Configuration, and Local Stack Initialization
+* **Estimated Completion Time:** 4 Hours (Day 2 of Onboarding)
+* **Target Audience:** Incoming software engineers, backend engineers, frontend engineers, and fullstack developers.
+* **Executive Summary:** Building upon the foundational workstation environment setup, this onboarding task guides the newcomer through cloning core ContextBridge repositories, configuring local environment variables (`.env`), executing database migrations, and launching the complete multi-container local development stack using Docker Compose. Completing this task validates that the developer can successfully run services, connect to local databases, and execute test suites within their local workspace.
+
+## 2. Goal and Why This Task Matters
+* **Primary Goal:** Successfully clone primary core repositories, configure local environment files, run database migrations, and verify that all backend and frontend services start successfully without errors.
+* **Why This Matters:** Technical employees must be able to independently spin up application codebases locally, understand project structures, verify database connections, and run test suites before they can be assigned real-world feature tickets or bug fixes.
+
+## 3. Prerequisites
+* Completion of `departments/software/onboarding_tasks/environment_setup.txt`.
+* Verified GitHub SSH authentication and active Docker Desktop daemon running.
+* Company VPN connection active (if working remotely).
+
+## 4. Required Access and Tooling
+* **Access Rights:** Read/Write access to ContextBridge GitHub organization repositories (`contextbridge-core-api`, `contextbridge-web-client`).
+* **Required Tools:** Git, Docker, Docker Compose, Python 3.11+, pnpm, Make or bash terminal.
+
+## 5. Step-by-Step Instructions
+
+### Step 1: Repository Cloning and Directory Structure Navigation
+1. Navigate to your local development directory (e.g., `cd ~/development/contextbridge`).
+2. Clone the core API repository and the web client repository via SSH:
+   ```bash
+   git clone git@github.com:ContextBridge/contextbridge-core-api.git
+   git clone git@github.com:ContextBridge/contextbridge-web-client.git
+Inspect the directory structure of contextbridge-core-api to understand project layout (src/, tests/, migrations/, Dockerfile, docker-compose.yml).
+
+Step 2: Environment Variable Configuration
+Navigate into the cloned backend repository directory: cd contextbridge-core-api.
+
+Copy the example environment configuration file to create your local .env file:
+
+Bash
+cp .env.example .env
+Open .env in your preferred code editor and verify default local development settings (e.g., PostgreSQL local connection strings, Redis host, local JWT secret keys).
+
+Step 3: Launching the Local Multi-Container Stack via Docker Compose
+Execute the Docker Compose build and startup command in detached mode:
+
+Bash
+docker compose up --build -d
+Verify that all service containers (API, PostgreSQL, Redis, Qdrant vector database) are running successfully without exit errors:
+
+Bash
+docker compose ps
+Inspect live container logs to verify database readiness:
+
+Bash
+docker compose logs -f api-service
+Step 4: Executing Database Migrations and Seeding Test Data
+Run database migration scripts inside the running API container using Alembic:
+
+Bash
+docker compose exec api-service alembic upgrade head
+Populate the local database with initial mock seed data for testing:
+
+Bash
+docker compose exec api-service python -m scripts.seed_db
+Step 5: Running Local Unit and Integration Test Suites
+Execute the comprehensive pytest test suite inside the containerized environment:
+
+Bash
+docker compose exec api-service pytest --cov=src tests/
+Confirm that all unit tests pass successfully with adequate code coverage.
+
+6. Expected Result
+By completing these steps, the engineer will have local copies of core repositories running inside isolated Docker containers, connected to functional local databases with applied migrations, and passing automated test suites.
+
+7. Evidence of Completion
+To mark this task as complete, provide:
+
+Terminal screenshot showing docker compose ps with all containers in Up (healthy) status.
+
+Terminal screenshot showing successful execution of pytest with 100% passing test results.
+
+Confirmation post in #eng-onboarding.
+
+8. Common Problems and Troubleshooting
+Problem: Database connection refused error during container startup.
+
+Investigation: Ensure PostgreSQL container has finished initialization before the API container attempts connection. Use healthchecks in docker-compose.yml.
+
+Problem: Port already in use error (e.g., port 5432 or 8000).
+
+Investigation: Check for lingering local postgres services or zombie docker containers (docker ps -a) and terminate them.
+
+9. When to Ask a Senior Engineer
+Reach out if database migration scripts fail repeatedly due to checksum mismatches or if core repository environment configuration secrets are missing from the template.
+
+10. Assessment Criteria
+Successful execution of container startup, database migration, and test suite passing validates completion.
+
+11. Related Tools and Technologies
+Tools: Git, GitHub, Docker, Docker Compose, PostgreSQL, Alembic, pytest.
+
+Related KB Documents: departments/software/tools/docker.txt, recurring_problems/dependency_errors.txt, recurring_problems/environment_setup.txt.
+
+--- DOCUMENT METADATA ---
+Document Type: SYNTHETIC_TASK
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Repository Onboarding
+Topic: Repository Cloning, Environment Configuration, and Local Stack Initialization
+Source: ContextBridge Demo Company
+Source URL: N/A
+Access Level: Internal
+Last Verified: 2026-09-22

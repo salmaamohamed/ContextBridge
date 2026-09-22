@@ -1,0 +1,87 @@
+# Frontend Engineer Role Specification & Onboarding Guide
+
+## 1. Role Purpose and Strategic Objective
+The Frontend Engineer is responsible for designing, developing, optimizing, and maintaining user-facing web applications, client-side interfaces, responsive design systems, and interactive dashboards powering the ContextBridge platform. The primary objective is to deliver exceptionally fast, accessible, secure, and intuitive user experiences that seamlessly integrate with backend REST/GraphQL APIs, support real-time data streaming, and adhere to modern web accessibility (a11y) and performance standards.
+
+## 2. Core Responsibilities and Daily Duties
+Frontend engineers bridge the gap between design mockups, product requirements, and backend data services through clean, modular client-side code.
+
+* **User Interface Implementation:** Build responsive, component-driven user interfaces using modern JavaScript/TypeScript frameworks (e.g., React, Next.js, Vue.js) and styling libraries (Tailwind CSS, Styled Components). Ensure pixel-perfect adherence to UI/UX design wireframes.
+* **State Management and API Integration:** Implement robust client-side state management (Zustand, Redux Toolkit, React Query) and handle asynchronous data fetching, caching, pagination, and optimistic updates when communicating with backend microservices.
+* **Performance Optimization:** Monitor and optimize core web vitals (Largest Contentful Paint, Cumulative Layout Shift, First Input Delay). Implement code splitting, lazy loading, image optimization, and bundle size reduction techniques.
+* **Cross-Browser Testing and Accessibility:** Verify application compatibility across major modern browsers (Chrome, Firefox, Safari, Edge). Ensure adherence to WCAG 2.1 AA accessibility guidelines for keyboard navigation, screen readers, and color contrast.
+* **Frontend Testing:** Write comprehensive unit and component tests using testing frameworks (Jest, React Testing Library, Vitest) and end-to-end integration tests using Cypress or Playwright.
+
+## 3. Required Technical Knowledge and Competencies
+A qualified frontend engineer joining ContextBridge must demonstrate strong proficiency across the web development ecosystem:
+
+* **Languages and Frameworks:** Expert-level mastery of TypeScript, modern JavaScript (ES6+), HTML5, and CSS3/Sass. Deep production experience with component-based frameworks such as React and Next.js.
+* **State and Data Fetching:** Proficiency in managing complex asynchronous state, server-state caching layers, and REST/GraphQL client libraries (Apollo Client, Axios, TanStack Query).
+* **Build Tools and Bundlers:** Familiarity with modern build tooling (Vite, Webpack, Turbopack), package managers (npm, pnpm, yarn), and static code analysis linters (ESLint, Prettier).
+* **Version Control:** Competency in Git workflows, branching models, pull request creation, and collaborative code reviews via GitHub.
+
+## 4. Typical Engineering Workflow
+Frontend engineers follow a standardized lifecycle from task pickup to production verification:
+
+1. **Ticket and Design Review:** Review the assigned Jira ticket alongside Figma design specs. Clarify UI edge cases, loading states, and error handling behaviors with product designers.
+2. **Feature Branching:** Create a localized feature branch from `main` following the convention `feature/<ticket-id>-short-description`.
+3. **Component Development:** Implement reusable components, wire up API hooks, handle validation errors, and verify responsive layouts across mobile, tablet, and desktop viewports.
+4. **Testing and Linting:** Run local unit tests, execute end-to-end test suites, and ensure code passes static linting checks without warnings.
+5. **Pull Request Submission:** Open a pull request against `main`, attaching screenshots or video recordings of the new UI features for peer review.
+6. **Staging Verification:** After merge, test the deployed build on staging environments to ensure API integration functions correctly.
+
+## 5. Cross-Functional Collaboration and Team Dynamics
+Frontend engineers collaborate closely with multiple departments to deliver polished software products:
+
+* **Backend Engineers:** Align on API contracts, response payloads, error codes, authentication token handling, and WebSocket event schemas.
+* **UI/UX Designers:** Iterate on design system tokens, component reusability, accessibility constraints, and responsive breakpoints.
+* **Product Managers:** Clarify user acceptance criteria, edge cases, feature flags, and rollout milestones.
+
+## 6. Expected Engineering Outputs and Deliverables
+During each sprint, a frontend engineer produces:
+* Production-ready, peer-reviewed TypeScript/React code merged into the main branch.
+* Automated component and E2E test suites with high coverage.
+* Reusable design system components added to the internal shared component library.
+* Performance audit reports showing adherence to Core Web Vitals thresholds.
+
+## 7. Common Onboarding Activities for New Frontend Engineers
+* **Week 1 - Environment Setup:** Clone the frontend repository, configure local Node/pnpm environments, install dependencies, and run the development server locally.
+* **Week 2 - First UI Ticket:** Pick up a scoped UI component ticket, implement the changes with tests, submit a pull request, and complete the code review process.
+
+## 8. Common Mistakes and Anti-Patterns to Avoid
+* **Prop Drilling:** Passing props excessively through multiple intermediary component layers instead of utilizing proper context or state management libraries.
+* **Ignoring Error and Loading States:** Failing to handle asynchronous network loading spinners, timeouts, and API error banners gracefully, resulting in broken UI experiences for users.
+* **Unoptimized Re-renders:** Triggering excessive component re-renders due to unmemoized callbacks or inline object definitions, causing sluggish UI responsiveness.
+
+## 9. Practical Examples & Scenario Handling
+* **Scenario: Handling Slow Network Connections:** Implement skeleton loaders and optimistic UI updates for mutating actions to ensure the application feels instantaneous even on high-latency networks.
+* **Scenario: Resolving Responsive Layout Bugs:** Use CSS Grid and Flexbox with mobile-first media queries to resolve layout overflow issues on smaller viewports.
+
+## 10. When to Ask a Senior Engineer
+Reach out to a senior team member when:
+* Encountering complex global state architecture decisions or routing conflicts in Next.js applications.
+* Unsure about security implications regarding client-side token storage, XSS prevention, or Content Security Policy headers.
+* Blocked for over 2 hours on persistent build bundling errors or TypeScript type mismatch issues.
+
+## 11. Related Tools and Technologies
+* **Languages & Frameworks:** TypeScript, React, Next.js, Tailwind CSS.
+* **Tooling:** Vite, pnpm, Jest, React Testing Library, Cypress, Git, GitHub, Figma.
+
+## 12. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/tools/github.txt`
+* `recurring_problems/dependency_errors.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: SYNTHETIC_ROLE
+Department: Software
+Role: Frontend Engineer
+Project: Core Web Application & Client Interfaces
+Topic: Frontend Engineer Role Specification, Responsibilities, and Onboarding Guide
+Source: ContextBridge Demo Company
+Source URL: N/A
+Access Level: Internal
+Last Verified: 2026-09-22

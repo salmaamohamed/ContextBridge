@@ -1,0 +1,71 @@
+```text
+# Onboarding Task: Participating in and Conducting Code Reviews
+
+## 1. Task Title and Executive Summary
+* **Task Title:** Code Review Participation, Constructive Feedback, and Security Auditing
+* **Estimated Completion Time:** 4 Hours (Day 4 of Onboarding)
+* **Target Audience:** Incoming software engineers, backend engineers, frontend engineers, and fullstack developers.
+* **Executive Summary:** Beyond writing code, every engineer at ContextBridge must actively participate in peer code reviews. This onboarding task trains new engineers on how to conduct thorough, polite, and security-conscious pull request reviews. Newcomers will review a synthetic sample pull request provided by their onboarding buddy, identify hidden bugs, spot security vulnerabilities (such as hardcoded secrets or unvalidated inputs), and provide structured, actionable feedback.
+
+## 2. Goal and Why This Task Matters
+* **Primary Goal:** Train new engineers on ContextBridge code review standards, security baselines, and constructive communication practices by reviewing a sample pull request.
+* **Why This Matters:** Code reviews safeguard production stability, distribute system knowledge across teams, and enforce security compliance. Learning how to review code effectively is just as important as learning how to write it.
+
+## 3. Prerequisites
+* Completion of `departments/software/processes/code_review.txt`.
+* Familiarity with GitHub pull request interfaces and markdown formatting.
+
+## 4. Required Access and Tooling
+* **Access Rights:** GitHub repository read access, code review permissions.
+* **Required Tools:** GitHub PR interface, web browser.
+
+## 5. Step-by-Step Instructions
+
+### Step 1: Accessing the Training Pull Request
+1. Navigate to the `contextbridge-training-sandbox` repository on GitHub.
+2. Open the designated onboarding review pull request titled `[TRAINING] Review Exercise: User Profile Update Service`.
+3. Read the PR description, associated simulated Jira ticket (`TRAIN-99`), and acceptance criteria carefully.
+
+### Step 2: Line-by-Line Code Inspection
+1. Click on the "Files changed" tab to examine the code diff.
+2. Inspect the changes across backend routing, data validation schemas, and database queries. Look specifically for:
+   * **Security Flaws:** Are API keys or passwords hardcoded? Are user inputs validated with Pydantic/Zod?
+   * **Performance Issues:** Are there potential N+1 query problems in database loops?
+   * **Test Coverage:** Are there unit tests covering the new functionality?
+
+### Step 3: Leaving Constructive Comments and Review Decision
+1. Click the `+` icon on specific lines of code to leave targeted review comments.
+2. Categorize feedback clearly: distinguish between mandatory blockers (security flaws, broken logic) and optional suggestions (readability refactors).
+3. Submit your final review with the status set to "Request Changes" or "Comment" depending on your findings.
+
+## 6. Expected Result
+The newcomer will successfully identify at least three intentional flaws (e.g., hardcoded secret, missing test case, N+1 query) in the training PR and write constructive, professional review comments.
+
+## 7. Evidence of Completion
+Provide screenshots of your review comments and submitted review status in the `#eng-onboarding` Slack channel for evaluation by your onboarding buddy.
+
+## 8. Common Problems and Troubleshooting
+* **Problem:** Over-focusing on nitpicky formatting details instead of logic.
+  * *Guidance:* Remember that automated linters handle formatting; human reviewers should focus on architecture, security, and correctness.
+
+## 9. When to Ask a Senior Engineer
+Reach out if you are unsure whether a specific code pattern represents a security vulnerability or an acceptable implementation trade-off.
+
+## 10. Assessment Criteria
+Successful completion is assessed based on the accuracy of bug detection, adherence to review etiquette guidelines, and quality of feedback comments.
+
+## 11. Related Tools and Technologies
+* **Tools:** GitHub Pull Requests.
+* **Related KB Documents:** `departments/software/processes/code_review.txt`, `departments/software/tools/github.txt`.
+
+---
+--- DOCUMENT METADATA ---
+Document Type: SYNTHETIC_TASK
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Engineering Onboarding
+Topic: Code Review Training, Security Auditing, and Peer Feedback
+Source: ContextBridge Demo Company
+Source URL: N/A
+Access Level: Internal
+Last Verified: 2026-09-22

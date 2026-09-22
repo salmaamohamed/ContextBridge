@@ -1,0 +1,96 @@
+# Backend Engineer Role Specification & Onboarding Guide
+
+## 1. Role Purpose and Strategic Objective
+The Backend Engineer plays a foundational role in designing, building, scaling, securing, and maintaining core application services, RESTful and GraphQL APIs, asynchronous task workers, database schemas, and microservices supporting ContextBridge and its associated client systems. The primary objective is to deliver high-performance, resilient, and secure backend architectures that handle high concurrency, maintain strict data integrity, and provide seamless integration points for frontend clients, AI inference pipelines, and third-party SaaS integrations.
+
+## 2. Core Responsibilities and Daily Duties
+Backend engineers balance feature delivery with operational excellence, code maintainability, and infrastructure reliability.
+
+* **API Design and Implementation:** Design, version, document, and implement robust RESTful or GraphQL APIs using modern frameworks (e.g., FastAPI, Express, Go net/http). Ensure proper input validation, payload serialization, and descriptive error handling.
+* **Database Modeling and Optimization:** Design efficient relational and non-relational database schemas, write optimized SQL queries, manage database migrations (e.g., Alembic, Prisma, Flyway), configure indexing strategies, and monitor query execution plans to prevent latency bottlenecks.
+* **Asynchronous Processing and Queues:** Build resilient background worker patterns using message brokers and task queues (e.g., Celery, Redis, RabbitMQ) to handle long-running operations, scheduled batch jobs, and AI model inference requests asynchronously.
+* **Testing and Quality Assurance:** Write comprehensive unit, integration, and end-to-end tests for all backend components. Maintain high test coverage thresholds and utilize test containers for realistic database integration testing.
+* **Performance Tuning and Profiling:** Monitor service metrics, CPU/memory utilization, and request latency using observability tools. Profile memory leaks, optimize database connection pooling, and tune caching layers (Redis/Memcached).
+* **Security and Compliance:** Implement secure authentication and authorization mechanisms (OAuth2, JWT, Role-Based Access Control). Ensure sensitive data encryption both in transit (TLS) and at rest, adhering strictly to company security baselines.
+
+## 3. Required Technical Knowledge and Competencies
+A qualified backend engineer joining ContextBridge must demonstrate proficiency across several technical domains:
+
+* **Programming Languages:** Advanced proficiency in Python (preferred for AI/backend integration, FastAPI, Pydantic) or Go/Node.js, with a strong grasp of asynchronous programming models, concurrency primitives, and memory management.
+* **Database Systems:** Deep practical experience with relational databases (PostgreSQL, MySQL) and NoSQL stores (MongoDB, Redis, Qdrant vector databases). Understanding of ACID properties, indexing, sharding, and connection pooling.
+* **API Standards:** Mastery of HTTP semantics, REST architectural constraints, OpenAPI/Swagger specifications, JSON schema validation, and webhook patterns.
+* **Containerization and Orchestration:** Solid working knowledge of Docker for containerizing microservices and basic familiarity with Kubernetes concepts (Pods, Deployments, Services, ConfigMaps).
+* **Version Control:** Expertise in Git workflows, branching strategies, interactive rebasing, merge conflict resolution, and collaborative code reviews via GitHub.
+
+## 4. Typical Engineering Workflow
+Backend engineers follow a structured lifecycle from ticket assignment to production monitoring:
+
+1. **Ticket Pickup:** Review the assigned Jira ticket, clarify requirements with product management, and verify technical specifications.
+2. **Branch Creation:** Create a localized feature branch from `main` following the naming convention `feature/<ticket-id>-short-description`.
+3. **Implementation:** Write clean, modular code accompanied by unit tests. Utilize local Docker Compose environments to spin up dependent databases and caches.
+4. **Local Verification:** Execute the test suite locally, run static linters (`flake8`, `Black`, `mypy`), and confirm API correctness using Postman, curl, or automated test scripts.
+5. **Pull Request:** Open a pull request against `main`, detailing the changes, test results, and migration notes if database schemas were modified. Address reviewer feedback promptly.
+6. **Deployment & Verification:** Once merged, monitor staging deployments via CI/CD dashboards and verify logs in production following release.
+
+## 5. Cross-Functional Collaboration and Team Dynamics
+Backend engineers do not work in isolation; they interact continuously with other technical and non-technical stakeholders:
+
+* **Frontend Engineers:** Collaborate on API contract definitions, payload structures, pagination strategies, and error handling codes to ensure seamless client integration.
+* **Data Engineers & Data Scientists:** Coordinate on database schema changes, vector search integrations (e.g., Qdrant), and serving model APIs for AI-powered features.
+* **DevOps / Platform Engineers:** Align on CI/CD pipeline configurations, Kubernetes deployment manifests, secret management, and infrastructure monitoring alerts.
+* **Product Managers:** Translate business feature requests into technical task breakdowns, estimate engineering effort realistically, and flag potential technical debt risks.
+
+## 6. Expected Engineering Outputs and Deliverables
+During any given sprint, a backend engineer is expected to produce:
+* Production-ready, peer-reviewed code merged into the main branch.
+* Automated unit and integration tests achieving required code coverage.
+* Updated OpenAPI documentation reflecting new or modified endpoints.
+* Database migration scripts tested against staging environments.
+* Incident post-mortems and bug fixes when production alerts trigger.
+
+## 7. Common Onboarding Activities for New Backend Engineers
+New backend engineers undergo a structured onboarding program during their first two weeks:
+* **Week 1 - Environment & Repository Setup:** Clone core backend repositories, configure local Python/Docker development environments, run the test suite locally, and execute the first database migration.
+* **Week 2 - First Ticket & Code Review:** Pick up a well-scoped "good-first-issue" bug fix or small feature ticket, submit a pull request, complete a mandatory code review peer training exercise, and merge the change.
+
+## 8. Common Mistakes and Anti-Patterns to Avoid
+* **N+1 Query Problems:** Fetching relational data inside loops without proper joins or prefetching (`selectinload`), causing severe database performance degradation under load.
+* **Hardcoding Configuration:** Embedding database credentials, third-party API keys, or environment-specific URLs directly in source code instead of using environment variables and configuration management classes (e.g., Pydantic `BaseSettings`).
+* **Swallowing Exceptions:** Catching broad exceptions (`except Exception:`) without logging stack traces or re-raising meaningful domain-specific errors, making debugging nearly impossible.
+* **Skipping Migrations Testing:** Writing database migration scripts without verifying both upgrade and downgrade paths on staging datasets.
+
+## 9. Practical Examples & Scenario Handling
+* **Scenario: Slow API Endpoint Response:** When an API endpoint experiences high latency, the engineer should first check database query execution plans (`EXPLAIN ANALYZE`), look for missing indexes on foreign keys, evaluate caching opportunities with Redis, and review asynchronous processing offloading.
+* **Scenario: Handling External API Failures:** When an integrated third-party service times out, implement exponential backoff retry logic, circuit breakers (e.g., using resilience patterns), and graceful degradation fallback responses.
+
+## 10. When to Ask a Senior Engineer
+A backend engineer should reach out to a senior team member or tech lead under specific conditions:
+* When encountering a database locking issue or migration failure that threatens data integrity on shared environments.
+* When designing a new microservice architecture or modifying core authentication mechanisms that impact cross-service boundaries.
+* When blocked for more than 2 hours on an environment setup or mysterious dependency error after exhausting self-investigation steps.
+* When identifying a potential security vulnerability, secret leak, or compliance violation in existing code.
+
+## 11. Related Tools and Technologies
+* **Languages & Frameworks:** Python 3.11+, FastAPI, Pydantic, SQLAlchemy, Celery.
+* **Databases & Caching:** PostgreSQL, Redis, Qdrant vector database.
+* **Tooling:** Docker, Docker Compose, Git, GitHub Actions, Postman, pytest, Alembic.
+
+## 12. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/processes/code_review.txt`
+* `departments/software/tools/docker.txt`
+* `recurring_problems/dependency_errors.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: SYNTHETIC_ROLE
+Department: Software
+Role: Backend Engineer
+Project: Core Infrastructure & Backend Services
+Topic: Backend Engineer Role Specification, Responsibilities, and Onboarding Guide
+Source: ContextBridge Demo Company
+Source URL: N/A
+Access Level: Internal
+Last Verified: 2026-09-22

@@ -1,0 +1,92 @@
+# Fullstack Engineer Role Specification & Onboarding Guide
+
+## 1. Role Purpose and Strategic Objective
+The Fullstack Engineer bridges the gap between client-side user interfaces and server-side business logic, data persistence layers, and cloud infrastructure. At ContextBridge, fullstack engineers own end-to-end feature development across the technology stack—from building responsive React components and Next.js interfaces to implementing FastAPI/Python microservices, relational database schemas, and containerized deployment pipelines. The primary objective is to deliver cohesive, high-performing vertical slices of functionality rapidly while maintaining rigorous architectural standards, security compliance, and comprehensive test coverage.
+
+## 2. Core Responsibilities and Daily Duties
+Fullstack engineers manage the entire lifecycle of software features, requiring versatility across frontend, backend, and infrastructure domains.
+
+* **End-to-End Feature Development:** Design and implement complete feature sets spanning UI components, API endpoints, database schema migrations, and asynchronous background worker tasks.
+* **API Design and Contract Synchronization:** Create robust RESTful and GraphQL APIs that serve frontend clients efficiently, ensuring strict contract alignment, payload validation, and backward compatibility.
+* **Data Modeling and Storage Optimization:** Implement relational and non-relational database schemas using ORMs or query builders (SQLAlchemy, Prisma), handle data migrations safely, and optimize slow-running queries.
+* **Testing Across the Stack:** Write and maintain unit tests for backend business logic, component tests for frontend UI elements, and end-to-end (E2E) integration tests verifying the entire user journey.
+* **Deployment and Infrastructure Management:** Configure Docker container images, manage environment variables, participate in CI/CD pipeline troubleshooting, and monitor application health metrics in staging and production environments.
+* **Technical Debt Management:** Refactor legacy code, upgrade third-party dependencies to patch security vulnerabilities, and improve system observability and error logging.
+
+## 3. Required Technical Knowledge and Competencies
+A qualified fullstack engineer joining ContextBridge must demonstrate balanced proficiency across multiple technical stacks:
+
+* **Frontend Mastery:** Proficiency in TypeScript, modern JavaScript (ES6+), React, Next.js, HTML5, CSS3/Tailwind, and state management libraries (TanStack Query, Zustand).
+* **Backend Proficiency:** Strong experience with Python (FastAPI, Pydantic, SQLAlchemy) or Node.js/Express, focusing on asynchronous execution, dependency injection, and clean architecture patterns.
+* **Database & Caching Technologies:** Working knowledge of relational databases (PostgreSQL), NoSQL stores (MongoDB, Redis), and vector search databases (Qdrant) used in AI-powered applications.
+* **DevOps & Tooling:** Solid familiarity with Docker, Docker Compose, Git version control workflows, GitHub Actions CI/CD pipelines, and Linux command-line environments.
+
+## 4. Typical Engineering Workflow
+Fullstack engineers follow an iterative development lifecycle designed for speed and safety:
+
+1. **Ticket Breakdown & Architecture Planning:** Review the Jira ticket, design the end-to-end data flow (from database schema to API response to frontend UI component), and document any edge cases.
+2. **Branch Creation:** Create a localized feature branch from `main` using the standard naming convention `feature/<ticket-id>-short-description`.
+3. **Iterative Implementation:** 
+   * *Step A:* Implement database migrations and backend API endpoints with unit tests.
+   * *Step B:* Build frontend components, connect them to the new API, and verify client-side behavior.
+4. **Local Integration Testing:** Spin up local multi-container environments using Docker Compose to verify end-to-end communication and test edge cases.
+5. **Code Quality and PR Submission:** Run local linters, type checkers, and test suites. Open a pull request against `main` with detailed descriptions, API usage examples, and UI screenshots.
+6. **Review and Merge:** Address reviewer feedback, ensure all automated CI checks pass, and merge into `main`.
+
+## 5. Cross-Functional Collaboration and Team Dynamics
+Fullstack engineers act as central connectors within the engineering organization:
+
+* **Product Managers & UX Designers:** Clarify functional requirements, review UI/UX mockups, and scope out phased delivery milestones.
+* **Specialized Engineers:** Consult backend or frontend specialists when encountering deep architectural complexities, database indexing bottlenecks, or complex state management hurdles.
+* **Data Scientists / AI Engineers:** Coordinate on integrating LLM serving endpoints, vector search queries, and prompt chaining pipelines into the core application stack.
+
+## 6. Expected Engineering Outputs and Deliverables
+During each sprint cycle, a fullstack engineer is expected to deliver:
+* Fully implemented, peer-reviewed vertical features spanning UI, API, and database layers.
+* Comprehensive test suites covering unit, integration, and E2E scenarios.
+* Database migration scripts tested for both upgrade and downgrade paths.
+* Technical documentation updates in repository READMEs or API specs.
+
+## 7. Common Onboarding Activities for New Fullstack Engineers
+* **Week 1 - Full Environment Setup:** Clone both frontend and backend repositories, configure local `.env` files, spin up Postgres and Redis containers via Docker Compose, and execute the full test suite.
+* **Week 2 - End-to-End Ticket Execution:** Pick up a scoped fullstack ticket (e.g., adding a new user settings page backed by a new database table and API endpoint), complete the implementation, and submit a pull request.
+
+## 8. Common Mistakes and Anti-Patterns to Avoid
+* **Tight Coupling / Monolithic Mindset:** Writing tightly coupled code where frontend components directly query databases or backend business logic is entangled with HTTP routing layers.
+* **Ignoring Context Switching Overheads:** Trying to tackle massive fullstack changes in a single monolithic pull request instead of breaking work down into logical, reviewable vertical increments.
+* **Inconsistent Error Handling:** Returning different error response structures from backend APIs, causing frontend error-boundary crashes and poor user feedback.
+
+## 9. Practical Examples & Scenario Handling
+* **Scenario: Adding a New Search Feature:** Design the database index or vector embedding query on the backend, expose a paginated search API endpoint, and build a responsive search bar component with debounced input and loading skeletons on the frontend.
+* **Scenario: Debugging a Broken Integration:** Use browser developer tools to inspect network payloads, trace backend logs in Datadog/CloudWatch, and examine database query execution logs to isolate whether the failure originates in the UI state, API serialization, or database layer.
+
+## 10. When to Ask a Senior Engineer
+A fullstack engineer should consult a senior team member when:
+* Designing architectural boundaries between microservices or splitting monolithic applications.
+* Facing critical database migration deadlocks or performance degradation on high-traffic tables.
+* Unsure about security compliance standards regarding cross-origin resource sharing (CORS), CSRF protection, or authentication token lifecycles.
+
+## 11. Related Tools and Technologies
+* **Languages & Frameworks:** TypeScript, Python, React, Next.js, FastAPI, SQLAlchemy.
+* **Databases & Storage:** PostgreSQL, Redis, Qdrant.
+* **Infrastructure & Tooling:** Docker, Docker Compose, Git, GitHub Actions, Postman, pytest, Jest.
+
+## 12. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/roles/backend_engineer.txt`
+* `departments/software/roles/frontend_engineer.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/tools/docker.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: SYNTHETIC_ROLE
+Department: Software
+Role: Fullstack Engineer
+Project: Core Application & Platform Architecture
+Topic: Fullstack Engineer Role Specification, Responsibilities, and Onboarding Guide
+Source: ContextBridge Demo Company
+Source URL: N/A
+Access Level: Internal
+Last Verified: 2026-09-22

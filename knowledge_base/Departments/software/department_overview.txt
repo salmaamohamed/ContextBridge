@@ -1,0 +1,45 @@
+SOFTWARE ENGINEERING DEPARTMENT OVERVIEW
+
+Company: NovaPay Technologies
+Scope: Company
+Category: department_overview
+Version: 1.0
+Last Updated: 2026-08-01
+
+------------------------------------------------------------
+
+1. MISSION
+The Software Engineering department designs, builds, and maintains all customer-facing and internal systems that power NovaPay's payments platform, ensuring reliability, security, and scalability as the company grows.
+
+2. TEAM STRUCTURE
+The Software Engineering department currently has 42 employees, organized into the following sub-teams:
+- Payments Platform (backend)
+- Web & Mobile Clients (frontend)
+- Platform Infrastructure
+- Quality Engineering
+
+Each sub-team has a lead who reports to the Head of Software Engineering, who in turn reports to the VP of Operations. New employees are assigned a mentor from their sub-team for the first 30 days.
+
+3. HOW THIS DEPARTMENT WORKS
+Work is tracked in Jira under the "SW" project key. Sprint planning happens every two weeks on Monday mornings, with a retrospective on the final Friday of each sprint. Daily standups are held at 9:30 AM and take no more than 15 minutes.
+
+4. KEY TOOLS
+- Git / GitHub
+- Jira
+- Docker & Kubernetes
+- Datadog (monitoring)
+- Slack
+
+5. HOW SUCCESS IS MEASURED
+- Sprint velocity and predictability
+- Production incident rate (target: <2 sev-1 incidents/quarter)
+- Code review turnaround time (target: <24h)
+- Test coverage (target: >80% on new code)
+
+6. WHO TO CONTACT
+- Department questions: #sw-general on Slack
+- Onboarding questions: your assigned mentor or the onboarding-support channel
+- Escalations: department lead, then HR if unresolved within 3 business days
+
+7. NEW EMPLOYEE EXPECTATIONS
+New employees are expected to complete environment setup within the first 2 days, shadow at least one process end-to-end within the first week, and submit a first real contribution (ticket, report, or task) within the first two weeks. Readiness is assessed at the 30-day mark through a short review with the department lead and mentor.

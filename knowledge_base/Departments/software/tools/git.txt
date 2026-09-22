@@ -1,0 +1,69 @@
+# Git Version Control Tool Guide & Standards
+
+## 1. Executive Summary and Tool Purpose
+Git is the foundational distributed version control system utilized across ContextBridge for tracking source code changes, collaborating across engineering teams, managing feature branches, and maintaining an immutable history of all software projects. Mastering Git workflows is mandatory for all technical employees to ensure code integrity, prevent accidental data loss, and facilitate seamless integration with remote repositories hosted on GitHub and continuous integration pipelines.
+
+## 2. Core Git Concepts & Terminology
+Understanding core Git terminology is essential for navigating daily software engineering tasks:
+* **Repository (Repo):** A storage directory containing all project files, configuration scripts, and complete historical revision tracking.
+* **Commit:** An immutable snapshot of changes made to files in the repository, accompanied by a unique cryptographic hash (SHA), author metadata, and a descriptive commit message.
+* **Branch:** A lightweight movable pointer to a specific commit, enabling isolated parallel development without disrupting the stable `main` branch.
+* **HEAD:** A special pointer referencing the currently checked-out branch or commit in the local working tree.
+* **Remote:** A version of the repository hosted on a network location (e.g., GitHub) used for team collaboration and code sharing.
+* **Merge vs. Rebase:** Methods for integrating changes from one branch into another. Merging preserves complete history graphs, whereas rebasing rewrites commit histories to create a clean, linear progression.
+
+## 3. Standardized Git Workflow at ContextBridge
+ContextBridge enforces a trunk-based development model supported by short-lived feature branches:
+1. **Pull Latest Changes:** Always ensure your local `main` branch is up to date before starting new work by executing `git checkout main && git pull origin main`.
+2. **Create a Feature Branch:** Branch off `main` using the strict naming convention `<type>/<jira-ticket-id>-short-description` (e.g., `git checkout -b feature/PROJ-1024-add-user-auth`).
+3. **Atomic Commits:** Make small, focused commits with descriptive messages explaining *why* a change was made rather than just *what* changed.
+4. **Regular Rebasing:** Frequently rebase your feature branch against the latest `main` branch (`git fetch origin && git rebase origin/main`) to catch merge conflicts early and maintain a clean commit history.
+5. **Push and Open PR:** Push your branch to the remote repository (`git push -u origin feature/PROJ-1024-add-user-auth`) and open a pull request on GitHub.
+
+## 4. Writing Descriptive Commit Messages
+Clear commit messages improve debugging, code audits, and automated changelog generation:
+* Use the imperative mood in the subject line (e.g., "Add rate limiter middleware" instead of "Added rate limiter" or "Adding rate limiter").
+* Keep the subject line under 50 characters.
+* Use the body of the commit message to explain the motivation behind the change and any side effects or breaking alterations.
+
+## 5. Handling Merge Conflicts
+Merge conflicts occur when two branches modify the same lines of code differently. Resolving them requires care:
+1. When a conflict occurs during a merge or rebase, Git marks the conflicted file with conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+2. Open the file in your code editor, review both versions, and choose the correct code blocks or combine them logically.
+3. Remove the conflict markers entirely.
+4. Stage the resolved files using `git add <file-path>`.
+5. Continue the rebase or commit process using `git rebase --continue` or `git commit`.
+
+## 6. Advanced Git Best Practices and Safety Rules
+* **Never Force Push to Main:** Executing `git push --force` on the shared `main` branch is strictly prohibited as it destroys production commit history. Force-pushing is only permitted on personal feature branches before pull request review.
+* **Sensitive Data Protection:** Never commit `.env` files, API keys, private SSH keys, or database credentials. If a secret is accidentally committed, immediately notify the security team and follow secret revocation protocols.
+* **Interactive Rebasing:** Utilize `git rebase -i` to squash messy wip (work-in-progress) commits into clean, logical semantic commits before requesting a pull request review.
+
+## 7. Common Git Troubleshooting Scenarios
+* **Undoing Last Commit (Keeping Changes):** Run `git reset --soft HEAD~1` to uncommit changes while keeping modified files in your working directory.
+* **Discarding Local Changes:** Run `git checkout -- <file>` or `git restore <file>` to discard uncommitted changes in a specific file.
+* **Stashing Unsaved Work:** Use `git stash` to temporarily store modified files when you need to switch branches quickly, and restore them later using `git stash pop`.
+
+## 8. Related Tools and Technologies
+* **Hosting Platform:** GitHub, GitHub Enterprise.
+* **Command Line Utilities:** Git CLI, GitHub CLI (`gh`).
+
+## 9. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/processes/development_process.txt`
+* `departments/software/processes/code_review.txt`
+* `departments/software/tools/github.txt`
+* `recurring_problems/account_access.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: PUBLIC_PARAPHRASED
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Development Tooling
+Topic: Git Version Control Workflow, Commands, and Best Practices
+Source: UK Home Office Engineering Guidance and Standards
+Source URL: https://github.com/UKHomeOffice/engineering-guidance-and-standards
+Access Level: Internal
+Last Verified: 2026-09-22

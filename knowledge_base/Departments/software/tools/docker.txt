@@ -1,0 +1,53 @@
+# Docker Containerization Tool Guide & Local Environment Standards
+
+## 1. Executive Summary and Tool Purpose
+Docker is the industry-standard containerization platform used across ContextBridge to package applications, microservices, databases, and dependencies into lightweight, portable, and isolated containers. Docker guarantees environment parity—ensuring that code running on a developer's local MacBook or Linux workstation behaves identically to staging and production Kubernetes clusters. Mastering Docker and Docker Compose is mandatory for all technical staff.
+
+## 2. Core Docker Concepts and Terminology
+* **Container:** A lightweight, standalone, executable software package containing all code, runtime, system tools, libraries, and settings required to run an application.
+* **Image:** An immutable read-only template containing instructions for building a Docker container.
+* **Dockerfile:** A text document containing sequential commands and instructions (`FROM`, `RUN`, `COPY`, `CMD`) used to assemble a container image.
+* **Docker Compose:** A tool for defining and running multi-container Docker applications using a single YAML configuration file (`docker-compose.yml`).
+* **Volume:** A persistent data storage mechanism mounted outside container lifecycle boundaries, essential for persisting database storage across container restarts.
+
+## 3. Local Development Setup with Docker Compose
+ContextBridge provides standardized `docker-compose.yml` files in all repository roots to spin up local development environments instantly:
+1. Ensure Docker Desktop or Docker Engine is running on your machine.
+2. Configure your local environment variables by copying `.env.example` to `.env`.
+3. Execute `docker compose up --build -d` to build container images and start backend services, PostgreSQL databases, and Redis caches in detached mode.
+4. View container logs using `docker compose logs -f` and stop services gracefully using `docker compose down`.
+
+## 4. Best Practices for Writing Dockerfiles
+* **Multi-Stage Builds:** Utilize multi-stage Docker builds to separate heavy build dependencies from lightweight production runtime images, significantly reducing final image sizes.
+* **Layer Caching Optimization:** Order Dockerfile instructions wisely (e.g., copying `requirements.txt` or `package.json` and installing dependencies *before* copying source code) to maximize build cache efficiency.
+* **Non-Root Users:** Never run application processes inside containers as the `root` user. Always create and switch to a dedicated non-root system user for enhanced security.
+* **.dockerignore Files:** Always include comprehensive `.dockerignore` files to exclude `node_modules`, `.git`, virtual environments, and sensitive local configuration files from image build contexts.
+
+## 5. Common Docker Troubleshooting Scenarios
+* **Port Conflicts:** Error `Bind for 0.0.0.0:5432 failed: port is already allocated`. This occurs when another local PostgreSQL instance is running. Stop the local service or modify the port mapping in `docker-compose.yml`.
+* **Out of Disk Space:** Docker images and volumes accumulate over time. Reclaim disk space by executing `docker system prune -a --volumes` to remove unused build cache and stopped containers.
+* **Container Exits Immediately:** Run `docker compose logs <service-name>` to inspect startup stack traces and missing environment variables.
+
+## 6. Related Tools and Technologies
+* **Orchestration:** Kubernetes, Helm, AWS ECS.
+* **Registry:** Enterprise Container Registry.
+
+## 7. Related Knowledge Base Documents
+* `departments/software/department_overview.txt`
+* `departments/software/roles/backend_engineer.txt`
+* `departments/software/processes/deployment_process.txt`
+* `recurring_problems/environment_setup.txt`
+* `recurring_problems/dependency_errors.txt`
+
+---
+--- DOCUMENT METADATA ---
+
+Document Type: PUBLIC_PARAPHRASED
+Department: Software
+Role: All Software Engineering Roles
+Project: Core Containerization Tooling
+Topic: Docker Containerization, Dockerfile Best Practices, and Compose Workflows
+Source: UK Home Office Engineering Guidance and Standards
+Source URL: https://github.com/UKHomeOffice/engineering-guidance-and-standards
+Access Level: Internal
+Last Verified: 2026-09-22
