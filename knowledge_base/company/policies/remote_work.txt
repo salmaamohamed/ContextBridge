@@ -1,0 +1,36 @@
+TITLE: Remote Work Policy
+
+TYPE: COMPANY_POLICY
+CATEGORY: REMOTE_WORK
+SCOPE: ALL_EMPLOYEES
+
+PURPOSE:
+Define general expectations for employees working remotely.
+
+POLICY:
+
+1. Employees must use approved company communication and
+collaboration tools.
+
+2. Employees must maintain access to required company systems
+during their working period.
+
+3. Company information must be protected when working outside
+company facilities.
+
+4. Employees should avoid accessing confidential company
+information through unsecured networks.
+
+5. Company devices and approved security controls must be used
+according to company requirements.
+
+6. Work progress, blockers, and important issues should be
+communicated through the appropriate team channels.
+
+7. Employees must follow their team's working hours and
+communication expectations.
+
+ESCALATION:
+If an employee cannot access a required system or tool while
+working remotely, the employee should follow the approved
+access/support process.

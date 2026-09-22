@@ -1,0 +1,47 @@
+TITLE: Communication and Escalation Process
+
+TYPE: GENERAL_PROCESS
+CATEGORY: COMMUNICATION
+SCOPE: ALL_EMPLOYEES
+
+PURPOSE:
+Define how employees should handle questions, blockers,
+and issues during onboarding and regular work.
+
+PROCESS:
+
+1. Identify the question or problem.
+
+2. Check the relevant approved documentation.
+
+3. Check project-specific documentation when applicable.
+
+4. Check approved recurring problems and FAQs.
+
+5. If the issue is technical and generic, use the approved
+general technical support path when available.
+
+6. If the issue remains unresolved, contact the appropriate
+team member or senior employee.
+
+7. Include sufficient context when escalating.
+
+ESCALATION_CONTEXT:
+
+An escalation should include:
+
+- Original question/problem
+- Employee department
+- Employee role
+- Project
+- Relevant task
+- What has already been attempted
+- Relevant error message
+- Reason the issue could not be resolved
+
+PRINCIPLE:
+
+Approved internal knowledge has priority over generic information.
+
+Company-specific or project-specific information must not be
+invented when it is unavailable.

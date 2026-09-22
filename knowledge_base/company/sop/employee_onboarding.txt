@@ -1,0 +1,64 @@
+TITLE: Technical Employee Onboarding SOP
+
+TYPE: SOP
+CATEGORY: EMPLOYEE_ONBOARDING
+SCOPE: NEW_EMPLOYEES
+
+PURPOSE:
+Provide a standard process for onboarding employees into their
+department, role, and project.
+
+ONBOARDING_SEQUENCE:
+
+1. Create Employee Profile
+2. Assign Department
+3. Assign Role
+4. Assign Project
+5. Review Company Information
+6. Provide Required Access
+7. Set Up Development/Work Environment
+8. Review Department Processes
+9. Review Project Knowledge
+10. Assign Onboarding Tasks
+11. Complete Practical Work
+12. Complete Assessment
+13. Review Progress and Skill Gaps
+14. Confirm Work Readiness
+
+EMPLOYEE_PROFILE:
+The onboarding profile should contain:
+
+- Department
+- Role
+- Project
+- Experience
+
+PERSONALIZED_PATH:
+The onboarding path should be based on the employee's context.
+
+The path may include:
+
+- Company processes
+- Product/project knowledge
+- Professional expectations
+- Technology stack
+- Tools
+- Onboarding tasks
+
+SUPPORT:
+Employees can use the onboarding support process when they
+encounter problems or have questions.
+
+ESCALATION:
+If approved company or project knowledge cannot provide a reliable
+answer, the issue should be escalated to the appropriate senior
+employee or supervisor.
+
+COMPLETION:
+Onboarding completion should consider:
+
+- Completed learning
+- Completed tasks
+- Assessment results
+- Identified skill gaps
+- Remaining blockers

@@ -1,0 +1,47 @@
+TITLE: Development Environment Setup SOP
+
+TYPE: SOP
+CATEGORY: ENVIRONMENT_SETUP
+SCOPE: TECHNICAL_EMPLOYEES
+
+PURPOSE:
+Guide employees through preparation of their required work
+environment.
+
+STEPS:
+
+1. Confirm required accounts.
+2. Confirm repository access.
+3. Install approved development tools.
+4. Install project dependencies.
+5. Configure required environment variables.
+6. Configure local services when required.
+7. Clone the assigned repository.
+8. Run the project locally.
+9. Verify the expected output.
+10. Report setup blockers through the approved support process.
+
+REQUIRED_INFORMATION:
+The employee should receive:
+
+- Required tools
+- Required versions
+- Repository location
+- Required permissions
+- Dependency information
+- Environment variable requirements
+- Local execution instructions
+
+SECURITY:
+Secrets, credentials, API keys, and private configuration values
+must not be committed to source control.
+
+SUCCESS_CRITERIA:
+
+The environment is considered ready when:
+
+- Required access is available.
+- Required tools are installed.
+- Dependencies are installed.
+- Configuration is complete.
+- The application or required workflow runs successfully.

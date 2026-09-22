@@ -1,0 +1,60 @@
+TITLE: Acceptable Use Policy
+
+TYPE: COMPANY_POLICY
+CATEGORY: ACCEPTABLE_USE
+SCOPE: ALL_EMPLOYEES
+
+PURPOSE:
+Define the acceptable use of company systems, accounts, devices,
+networks, applications, and information.
+
+POLICY:
+
+1. Company systems must be used for authorized business purposes.
+
+2. Employees must use only accounts and permissions assigned to them.
+
+3. Employees must not share passwords, authentication tokens,
+API keys, access credentials, or private keys with other employees
+through unauthorized channels.
+
+4. Employees must not attempt to access systems, repositories,
+databases, files, or services without authorization.
+
+5. Company data must not be copied to personal storage or
+unauthorized external services.
+
+6. Employees must not install unauthorized software on company
+devices or development environments.
+
+7. Employees must follow the company's security procedures when
+handling confidential or restricted information.
+
+8. Security incidents, suspicious activity, or accidental exposure
+of sensitive information must be reported through the approved
+company process.
+
+9. Employees must follow the access permissions associated with
+their role and project.
+
+10. When an employee changes teams, projects, or responsibilities,
+access must be reviewed and updated according to company procedures.
+
+APPROVED_BEHAVIOR:
+- Use authorized accounts.
+- Use approved tools.
+- Follow assigned permissions.
+- Protect company information.
+- Report security concerns.
+
+PROHIBITED_BEHAVIOR:
+- Credential sharing.
+- Unauthorized system access.
+- Unauthorized data transfer.
+- Circumventing security controls.
+- Installing unapproved software.
+
+ESCALATION:
+Questions about acceptable use that are not covered by this policy
+should be escalated to the appropriate company administrator,
+security contact, or supervisor.

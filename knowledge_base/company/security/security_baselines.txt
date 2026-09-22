@@ -1,0 +1,47 @@
+TITLE: Security Baselines
+
+TYPE: SECURITY_GUIDELINE
+CATEGORY: SECURITY
+SCOPE: ALL_EMPLOYEES
+
+PURPOSE:
+Define baseline security practices for employees working with
+company systems and information.
+
+GUIDELINES:
+
+1. Use individual accounts whenever available.
+
+2. Do not share authentication credentials.
+
+3. Do not store secrets directly in source code.
+
+4. Do not commit API keys, passwords, tokens, or private keys
+to repositories.
+
+5. Use approved secret-management mechanisms.
+
+6. Access only systems and data required for assigned work.
+
+7. Keep development tools and dependencies updated according
+to company requirements.
+
+8. Do not upload confidential company information to unauthorized
+external services.
+
+9. Report suspected credential exposure immediately.
+
+10. Follow project-specific security requirements when they are
+more restrictive than general guidelines.
+
+INCIDENT_EXAMPLES:
+
+- Exposed API key
+- Accidentally committed password
+- Unauthorized repository access
+- Suspicious login
+- Sensitive information sent to the wrong recipient
+
+ESCALATION:
+Security-related incidents should be reported immediately through
+the approved security or management channel.

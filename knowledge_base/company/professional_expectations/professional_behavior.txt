@@ -1,0 +1,51 @@
+TITLE: Professional Expectations
+
+TYPE: PROFESSIONAL_EXPECTATIONS
+CATEGORY: WORKPLACE_BEHAVIOR
+SCOPE: ALL_EMPLOYEES
+
+PURPOSE:
+Define general professional expectations for employees.
+
+EXPECTATIONS:
+
+1. Employees should communicate clearly with their team.
+
+2. Employees should keep relevant stakeholders informed about
+progress and blockers.
+
+3. Employees should ask for clarification when requirements are
+unclear.
+
+4. Employees should document important technical or operational
+information.
+
+5. Employees should follow agreed team processes.
+
+6. Employees should complete assigned work within agreed
+timeframes or communicate delays early.
+
+7. Employees should participate appropriately in code reviews,
+technical discussions, meetings, and team activities relevant
+to their role.
+
+8. Employees should accept constructive feedback and use it
+to improve their work.
+
+9. Employees should raise blockers rather than remaining blocked
+without communication.
+
+10. Employees should distinguish between confirmed company
+information and assumptions.
+
+ONBOARDING_EXPECTATION:
+
+A new employee is expected to:
+
+- Learn the relevant company processes.
+- Understand their department responsibilities.
+- Understand their project context.
+- Complete assigned onboarding tasks.
+- Ask questions when information is unclear.
+- Communicate blockers.
+- Demonstrate practical understanding.
