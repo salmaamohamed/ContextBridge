@@ -1,50 +1,268 @@
-TITLE: Dependency Installation Errors
+TITLE: Dependency and Package Errors
+DOCUMENT TYPE: Company Recurring Problem Knowledge
+SCOPE: Technical Employees Across Departments
+STATUS: Approved
+OWNER: Engineering Enablement
+VERSION: 1.0
 
-TYPE: RECURRING_PROBLEM
-CATEGORY: DEPENDENCIES
-SCOPE: TECHNICAL_EMPLOYEES
+1. PURPOSE
 
-PROBLEM:
-A required project dependency cannot be installed or the project
-fails because of dependency conflicts.
+This document provides general troubleshooting guidance for recurring dependency and package-related problems.
 
-COMMON_SYMPTOMS:
+It applies to common development environments without describing any specific project dependency list.
 
-- Package installation failure.
-- Version conflict.
+A dependency problem occurs when software required by an application, script, development tool or environment cannot be installed, resolved, imported or executed correctly.
+
+2. PROBLEM: DEPENDENCY NOT FOUND
+
+Symptoms:
+- A command reports that a package or module cannot be found.
+- An import fails.
+- The application cannot start because a required dependency is missing.
+
+Possible causes:
+- Dependency is not installed.
+- Wrong environment is active.
+- Dependency installation failed.
+- Package name is incorrect.
+- The dependency exists in a different environment.
+
+Troubleshooting:
+1. Confirm the active development environment.
+2. Confirm the exact package or module name.
+3. Check the project's approved dependency documentation.
+4. Install dependencies using the approved package-management procedure.
+5. Retry the command.
+6. If the problem remains, record the environment and error message.
+
+Do not randomly install unrelated packages as a workaround.
+
+3. PROBLEM: WRONG DEPENDENCY VERSION
+
+Symptoms:
+- A package installs but the application behaves unexpectedly.
+- An import or function is unavailable.
+- A dependency conflict appears.
+
+Possible causes:
+- Installed version differs from the approved version.
+- Multiple packages require incompatible versions.
+- Environment was created from an outdated dependency definition.
+
+Troubleshooting:
+1. Check the approved dependency specification.
+2. Identify the installed version.
+3. Compare it with the documented requirement.
+4. Recreate or update the environment using the approved procedure when appropriate.
+5. Run the relevant tests.
+
+Do not upgrade production or shared dependencies without following the applicable change process.
+
+4. PROBLEM: DEPENDENCY CONFLICT
+
+Symptoms:
+- Package manager reports conflicting requirements.
+- Installation cannot resolve compatible versions.
+- One package requires a version that conflicts with another.
+
+Troubleshooting:
+1. Read the complete conflict message.
+2. Identify the packages involved.
+3. Check the approved dependency file.
+4. Avoid deleting random packages.
+5. Ask the responsible technical owner when the conflict cannot be resolved safely.
+6. Document the final dependency decision when required.
+
+5. PROBLEM: INSTALLATION FAILURE
+
+Symptoms:
+- Package installation stops with an error.
+- Download or build fails.
+- Installation works for one employee but not another.
+
+Possible causes:
+- Network problem.
+- Package repository unavailable.
+- Unsupported runtime version.
+- Missing build tools.
+- Permission issue.
+- Incorrect environment configuration.
+
+Troubleshooting:
+1. Read the actual error message.
+2. Confirm network connectivity.
+3. Confirm the supported runtime version.
+4. Confirm the correct environment is active.
+5. Retry using the approved installation command.
+6. If the failure continues, capture the error and environment information.
+
+6. PROBLEM: PACKAGE MANAGER COMMAND NOT FOUND
+
+Symptoms:
+- The terminal reports that the package manager command is not recognized.
+
+Possible causes:
+- Required runtime is not installed.
+- Package manager is not installed.
+- PATH configuration is incorrect.
+- The wrong terminal environment is active.
+
+Troubleshooting:
+1. Confirm the required runtime is installed.
+2. Open the approved development terminal.
+3. Verify the environment activation procedure.
+4. Check the documented installation path.
+5. Restart the terminal after environment changes.
+6. Escalate if the approved setup does not work.
+
+7. PROBLEM: IMPORT ERROR
+
+Symptoms:
+- Application starts but fails during import.
+- A module name cannot be resolved.
+- An expected class or function is unavailable.
+
+Possible causes:
 - Missing package.
-- Incompatible runtime version.
-- Dependency resolution failure.
-- Application starts but fails during import or execution.
+- Wrong package version.
+- Wrong import path.
+- Wrong environment.
+- Local module conflict.
 
-TROUBLESHOOTING:
+Troubleshooting:
+1. Check the exact error.
+2. Confirm the active environment.
+3. Confirm the installed package version.
+4. Check approved documentation.
+5. Avoid changing source code simply to hide an environment problem.
 
-1. Check the required runtime version.
+8. PROBLEM: BUILD DEPENDENCY FAILURE
 
-2. Check the project's dependency file.
+Symptoms:
+- A package requires compilation and the build fails.
+- Installation reports missing compiler or system tools.
 
-3. Confirm that the employee is using the approved installation
-method.
+Possible causes:
+- Required build tools are missing.
+- Runtime version is unsupported.
+- Prebuilt package is unavailable for the platform.
 
-4. Create or activate the required virtual environment when
-applicable.
+Troubleshooting:
+1. Read the build error.
+2. Check the approved environment requirements.
+3. Verify supported operating-system and runtime versions.
+4. Install only approved development tools.
+5. Retry.
+6. Escalate with the complete build error if unresolved.
 
-5. Install dependencies using the project-approved process.
+9. PROBLEM: ENVIRONMENT WORKS FOR ONE EMPLOYEE BUT NOT ANOTHER
 
-6. Review known dependency issues for the project.
+Possible causes:
+- Different runtime version.
+- Different dependency versions.
+- Different environment variables.
+- Different operating-system configuration.
+- Incomplete environment setup.
 
-7. Do not arbitrarily upgrade or downgrade dependencies without
-following project procedures.
+Troubleshooting:
+Compare:
+- Runtime version.
+- Package-manager version.
+- Dependency versions.
+- Environment activation.
+- Required configuration.
+- Operating system.
 
-8. If unresolved, escalate the issue with:
+Do not copy another employee's entire environment blindly.
 
-- Runtime version
-- Dependency version
-- Full error message
-- Installation command
-- Relevant project information
+10. PROBLEM: DEPENDENCY DOWNLOAD TIMEOUT
 
-APPROVED_SOLUTION:
-Use the versions and installation procedure documented by the
-project. Project-specific dependency requirements take priority
-over generic recommendations.
+Symptoms:
+- Package download times out.
+- Installation stops during download.
+
+Troubleshooting:
+1. Check network connectivity.
+2. Retry the approved command.
+3. Check whether the approved package source is available.
+4. Determine whether the issue is temporary.
+5. Escalate if the approved source remains unavailable.
+
+Do not download company dependencies from unapproved sources.
+
+11. PROBLEM: CACHE OR STALE PACKAGE DATA
+
+Symptoms:
+- Package manager behaves differently after previous failed installations.
+- An expected version is not selected.
+
+Troubleshooting:
+1. Review the package manager output.
+2. Follow the approved cache-cleaning procedure if one exists.
+3. Recreate the environment when documented as the supported solution.
+4. Avoid deleting system files or configuration without approval.
+
+12. DEPENDENCY SECURITY
+
+Employees should use approved package sources and documented dependencies.
+
+Do not install an unknown package simply because its name appears in an online answer.
+
+Before introducing a new dependency into shared or production software, follow the applicable development and change-management process.
+
+Consider:
+- Package source.
+- Maintainer information.
+- Version.
+- Security requirements.
+- Licensing requirements.
+- Compatibility.
+
+13. INFORMATION TO PROVIDE WHEN ESCALATING
+
+Include:
+- Operating system.
+- Runtime version.
+- Package-manager version.
+- Dependency name and version.
+- Exact error message.
+- Installation command.
+- Environment name.
+- Steps already attempted.
+
+Do not include passwords, tokens or private credentials.
+
+14. WHEN TO ESCALATE
+
+Escalate when:
+- The approved dependency cannot be installed.
+- Dependency versions conflict.
+- The problem affects a shared environment.
+- A security concern exists.
+- The required package is unavailable from approved sources.
+- The fix would require an unapproved production or shared-system change.
+
+15. CONTEXTBRIDGE AGENT USAGE
+
+The General Technical Agent can use this document to provide general troubleshooting guidance for dependency problems.
+
+The agent should first retrieve the relevant approved knowledge.
+
+It should ask for missing technical information when necessary, such as:
+- Runtime version.
+- Dependency name.
+- Exact error.
+- Environment.
+
+The agent should not invent package versions or commands that are not documented in the available knowledge.
+
+Project-specific dependency instructions should come from the Project KB.
+
+16. DOCUMENT GOVERNANCE
+
+This document is approved Company KB content.
+
+Specific projects may maintain their own dependency documentation. Those project documents should be retrieved for project-specific dependency questions.
+
+Last Reviewed: 2026-09
+Version: 1.0

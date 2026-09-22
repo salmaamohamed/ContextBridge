@@ -1,50 +1,272 @@
-TITLE: Development Environment Setup Problems
+TITLE: Development Environment Setup Recurring Problems
+DOCUMENT TYPE: Company Recurring Problem Knowledge
+SCOPE: Technical Employees Across Departments
+STATUS: Approved
+OWNER: Engineering Enablement
+VERSION: 1.0
 
-TYPE: RECURRING_PROBLEM
-CATEGORY: ENVIRONMENT_SETUP
-SCOPE: TECHNICAL_EMPLOYEES
+1. PURPOSE
 
-PROBLEM:
-Employee cannot successfully configure or run the required
-development environment.
+This document provides general troubleshooting guidance for recurring problems during development environment setup.
 
-COMMON_SYMPTOMS:
+It supports new employees who are preparing a workstation for approved technical work.
 
-- Tool is not installed.
-- Incorrect tool version.
-- Dependency installation fails.
-- Environment variable is missing.
+This document describes general setup concepts. Exact project commands, dependency versions, repository URLs and service configurations belong to the relevant Project KB.
+
+2. PROBLEM: REQUIRED RUNTIME IS NOT FOUND
+
+Symptoms:
+- Terminal reports that a required runtime is not recognized.
+- A version-check command fails.
+- Development tools cannot find the runtime.
+
+Possible causes:
+- Runtime is not installed.
+- Runtime is not available on PATH.
+- The wrong terminal is open.
+- The employee installed a different version from the supported one.
+
+Troubleshooting:
+1. Check the approved development requirements.
+2. Confirm the runtime installation.
+3. Open a new terminal after installation.
+4. Verify the runtime version.
+5. Confirm that the terminal can locate the runtime.
+6. If the approved setup still fails, escalate with the version and error message.
+
+3. PROBLEM: VIRTUAL ENVIRONMENT CANNOT BE CREATED
+
+Symptoms:
+- Environment creation command fails.
+- The environment directory is not created.
+- The runtime cannot create the environment.
+
+Possible causes:
+- Runtime installation is incomplete.
+- Required environment tooling is missing.
+- Directory permissions prevent creation.
+- The wrong runtime is being used.
+
+Troubleshooting:
+1. Confirm the runtime version.
+2. Confirm the current working directory.
+3. Confirm write permission for the development directory.
+4. Follow the approved environment-creation procedure.
+5. Retry in a clean terminal.
+6. Escalate if the documented procedure fails.
+
+4. PROBLEM: VIRTUAL ENVIRONMENT CANNOT BE ACTIVATED
+
+Symptoms:
+- Activation command fails.
+- Terminal reports a permissions or script-execution problem.
+- Commands continue using the global runtime.
+
+Troubleshooting:
+1. Confirm that the environment directory exists.
+2. Confirm that the correct activation command is being used for the terminal type.
+3. Check the approved workstation policy.
+4. Restart the terminal if required.
+5. Verify that the active runtime points to the intended environment.
+
+Do not disable company security controls simply to activate an environment.
+
+5. PROBLEM: WRONG RUNTIME VERSION
+
+Symptoms:
+- Dependencies fail to install.
+- Application behaves differently from documented instructions.
+- Setup instructions expect another runtime version.
+
+Troubleshooting:
+1. Check the project's documented runtime requirement.
+2. Check the installed version.
+3. Use the approved version-management procedure.
+4. Recreate the development environment when required.
+5. Reinstall dependencies using the approved dependency instructions.
+
+6. PROBLEM: ENVIRONMENT VARIABLES ARE MISSING
+
+Symptoms:
+- Application cannot start.
+- Configuration-related errors appear.
+- A required service cannot be initialized.
+
+Possible causes:
+- Required variable is not configured.
+- Configuration file is missing.
+- The employee followed an outdated setup instruction.
+
+Troubleshooting:
+1. Identify which configuration value is missing.
+2. Check the approved setup documentation.
+3. Obtain required non-secret configuration through the approved channel.
+4. For secrets, use the approved secret-management mechanism.
+5. Restart the application after approved configuration changes.
+
+Never place real secrets into source code or public configuration files.
+
+7. PROBLEM: SECRET OR CREDENTIAL CONFIGURATION ERROR
+
+Symptoms:
+- Authentication fails during local development.
+- A service reports invalid credentials.
+- A secret cannot be loaded.
+
+Troubleshooting:
+1. Confirm the application is reading the intended configuration source.
+2. Confirm the employee is authorized to use the required secret.
+3. Check the approved secret-management instructions.
+4. Rotate or report exposed credentials according to the security process.
+
+Do not request another employee's credentials.
+
+8. PROBLEM: DEVELOPMENT TOOL CANNOT FIND THE ENVIRONMENT
+
+Symptoms:
+- IDE uses the global runtime instead of the project environment.
+- Packages appear missing inside the IDE.
+- Terminal and IDE show different runtime versions.
+
+Troubleshooting:
+1. Confirm the environment exists.
+2. Confirm the environment works from the terminal.
+3. Select the approved project interpreter/runtime in the IDE.
+4. Restart the IDE when required.
+5. Verify the runtime and package versions again.
+
+9. PROBLEM: PACKAGE INSTALLATION WORKS BUT APPLICATION DOES NOT START
+
+Possible causes:
+- Wrong environment.
+- Missing environment variable.
+- Incompatible dependency version.
 - Required service is unavailable.
-- Application fails during local startup.
+- Incorrect configuration.
 
-TROUBLESHOOTING:
+Troubleshooting:
+1. Read the first meaningful error.
+2. Confirm active environment.
+3. Check dependency requirements.
+4. Check approved configuration.
+5. Check required local services.
+6. Use the relevant recurring-problem documentation.
 
-1. Confirm the required tool versions.
+10. PROBLEM: LOCAL SERVICE IS NOT RUNNING
 
-2. Confirm that the repository was cloned correctly.
+Symptoms:
+- Application cannot connect to a required local service.
+- Connection refused or timeout appears.
+- Setup instructions expect a service that is not available.
 
-3. Confirm that dependencies were installed using the
-project-approved method.
+Troubleshooting:
+1. Identify the service required by the documented setup.
+2. Confirm whether the service should run locally.
+3. Check the approved startup procedure.
+4. Confirm the expected host and port from approved documentation.
+5. Restart the service using the approved method.
+6. Escalate if the documented setup does not work.
 
-4. Check required environment variables.
+Do not expose or modify shared environments to solve a local setup problem.
 
-5. Check whether required local or external services are running.
+11. PROBLEM: PERMISSION DENIED DURING SETUP
 
-6. Review the project setup documentation.
+Symptoms:
+- Files cannot be created.
+- Tools cannot write to the development directory.
+- Installation requires administrator privileges.
 
-7. Check the approved recurring setup problems.
+Troubleshooting:
+1. Confirm that the directory is approved for development work.
+2. Check file ownership and local permissions.
+3. Use the approved user-level installation method when available.
+4. Request elevated access only through the approved process.
 
-8. If unresolved, escalate with the complete error message.
+Do not bypass operating-system security controls.
 
-DO NOT:
+12. PROBLEM: DEVELOPMENT TOOL INSTALLATION FAILED
 
-- Guess missing credentials.
-- Use unauthorized credentials.
-- Commit secrets.
-- Change project configuration without understanding
-the impact.
+Symptoms:
+- IDE or required tool fails to install.
+- Installer stops with an error.
+- Tool launches but cannot complete configuration.
 
-APPROVED_SOLUTION:
-Follow the project-specific environment setup instructions.
-If those instructions are unavailable or incomplete, escalate
-to the project owner or appropriate senior employee.
+Troubleshooting:
+1. Check supported operating-system requirements.
+2. Check available disk space.
+3. Review the installation error.
+4. Retry using the approved installer/source.
+5. Escalate with the exact error if unresolved.
+
+13. PROBLEM: SETUP IS INCONSISTENT WITH DOCUMENTATION
+
+Symptoms:
+- A documented command does not work.
+- A referenced file or setting does not exist.
+- Instructions refer to an outdated tool or version.
+
+Do not invent replacement instructions immediately.
+
+Steps:
+1. Confirm the documentation version.
+2. Check whether a newer approved document exists.
+3. Compare the setup requirement with the actual environment.
+4. Report outdated documentation to the responsible owner.
+5. Use only approved replacement instructions.
+
+14. CLEAN ENVIRONMENT RESET
+
+A clean environment reset may be useful when repeated setup attempts have created inconsistent local state.
+
+Before resetting:
+- Confirm which local files are safe to remove.
+- Preserve work that has not been committed or backed up.
+- Follow the approved project-specific reset instructions.
+- Avoid deleting shared or production resources.
+
+15. INFORMATION TO PROVIDE WHEN ESCALATING
+
+Include:
+- Operating system.
+- Runtime version.
+- IDE/tool version.
+- Environment name.
+- Command attempted.
+- Exact error.
+- Relevant configuration category.
+- Steps already attempted.
+
+Never include secrets.
+
+16. WHEN TO ESCALATE
+
+Escalate when:
+- Approved setup instructions fail repeatedly.
+- Required software cannot be installed.
+- Security policy prevents a required action.
+- A required system or account is unavailable.
+- The setup problem affects a shared environment.
+- Resolving the problem would require unauthorized privileges.
+
+17. CONTEXTBRIDGE AGENT USAGE
+
+The Onboarding Support Agent can use this document for general environment setup questions.
+
+The agent should distinguish between:
+- Company-wide setup guidance.
+- Project-specific setup instructions.
+
+For example, the Company KB can explain how to troubleshoot a missing runtime.
+
+The Project KB should provide the exact runtime version and project-specific setup command when that information is required.
+
+The agent must not invent project configuration, credentials or environment variables.
+
+18. DOCUMENT GOVERNANCE
+
+This document is approved Company KB content.
+
+Project-specific setup requirements should be maintained in Project KB documentation.
+
+Last Reviewed: 2026-09
+Version: 1.0

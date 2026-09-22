@@ -1,46 +1,240 @@
-TITLE: Account Access Problems
+TITLE: Account Access Recurring Problems
+DOCUMENT TYPE: Company Recurring Problem Knowledge
+SCOPE: All Departments
+STATUS: Approved
+OWNER: IT Operations
+VERSION: 1.0
 
-TYPE: RECURRING_PROBLEM
-CATEGORY: ACCOUNT_ACCESS
-SCOPE: ALL_EMPLOYEES
+1. PURPOSE
 
-PROBLEM:
-Employee cannot access a required company account.
+This document describes recurring account-related problems that employees may experience during onboarding or normal work. It provides general troubleshooting guidance for company accounts without replacing the official Access Request Process or Security policies.
 
-COMMON_SYMPTOMS:
+The purpose is to help employees identify common account problems, perform safe checks, and determine when an issue should be escalated.
 
-- Account has not been created.
-- Login credentials have not been received.
-- Account exists but access is denied.
-- Password reset is required.
-- Required permissions are missing.
+This document does not contain passwords, credentials, tokens, or project-specific access information.
 
-TROUBLESHOOTING:
+2. PROBLEM: ACCOUNT HAS NOT BEEN CREATED
 
-1. Confirm that the employee's account should already exist.
+Symptoms:
+- Employee cannot sign in because no company account exists.
+- The employee has not received an account activation message.
+- The employee's manager expected access to be available but no account is visible.
 
-2. Confirm that the correct company identity/account is being used.
+Possible causes:
+- Account creation has not been completed.
+- Onboarding information is incomplete.
+- The request is still pending.
+- The account invitation was sent to an incorrect address.
 
-3. Check whether the employee received the required invitation.
+Troubleshooting:
+1. Confirm that the employee's onboarding information was submitted.
+2. Confirm the expected company email or username.
+3. Check whether an account-creation request exists.
+4. Check the approved access-request status.
+5. If the request is pending, follow the documented access process.
+6. If the request was completed but no account exists, contact the responsible IT owner.
 
-4. Verify whether the requested system requires additional approval.
+Expected result:
+The employee receives an individual company account and can complete the approved activation process.
 
-5. Verify that the employee belongs to the correct department,
-team, or project.
+Escalation:
+Escalate when account creation was approved or expected but has not been completed.
 
-6. If access is still unavailable, escalate through the approved
-access request process.
+3. PROBLEM: WRONG COMPANY ACCOUNT
 
-REQUIRED_ESCALATION_INFORMATION:
+Symptoms:
+- The employee is logged into a personal account.
+- The employee can access public resources but not company resources.
+- The system displays a different organization or account.
 
-- Employee name/identifier
-- Department
-- Role
-- Project
-- System requiring access
-- Current error message
-- Date/time of access attempt
+Possible causes:
+- Browser session is using a personal account.
+- Multiple accounts are signed in.
+- The employee used a personal email instead of the company account.
 
-APPROVED_SOLUTION:
-Follow the company's account provisioning and access request
-process. Do not bypass access controls.
+Troubleshooting:
+1. Check the account currently signed into the service.
+2. Sign out of the incorrect account when appropriate.
+3. Sign in using the approved company account.
+4. Retry the requested operation.
+5. If access is still unavailable, check the access-request status.
+
+Do not share company credentials with another person.
+
+4. PROBLEM: PASSWORD OR LOGIN FAILURE
+
+Symptoms:
+- Username and password are rejected.
+- Login repeatedly fails.
+- The employee cannot remember the account password.
+
+Troubleshooting:
+1. Confirm that the correct company account is being used.
+2. Check for obvious username or typing errors.
+3. Use the company's approved password-reset mechanism.
+4. Complete any required identity verification.
+5. Retry the login using the newly established credentials.
+6. If the account remains unavailable, contact the approved support channel.
+
+Employees must not ask another employee for their password or attempt to bypass authentication.
+
+5. PROBLEM: MULTI-FACTOR AUTHENTICATION FAILURE
+
+Symptoms:
+- MFA code is rejected.
+- Authentication approval is not received.
+- The registered authentication method is unavailable.
+- The employee cannot complete the second authentication step.
+
+Safe checks:
+1. Confirm the employee is using the registered authentication method.
+2. Check whether the device has connectivity when required.
+3. Check the device time if the authentication method depends on synchronized time.
+4. Retry the approved authentication flow.
+5. Use the documented recovery process if the registered method is unavailable.
+
+Do not disable MFA to solve an onboarding problem unless an authorized administrator follows the approved procedure.
+
+6. PROBLEM: ACCOUNT LOCKED
+
+Symptoms:
+- The system reports that the account is locked.
+- Login attempts are blocked after repeated failures.
+
+Possible causes:
+- Repeated incorrect credentials.
+- Automated security protection.
+- Suspicious authentication activity.
+
+Troubleshooting:
+1. Stop repeated login attempts.
+2. Follow the approved account-unlock or password-reset process.
+3. If suspicious activity is suspected, report it through the security process.
+4. Contact IT support if the account remains locked.
+
+Do not attempt to bypass an account lock.
+
+7. PROBLEM: INVITATION NOT RECEIVED
+
+Symptoms:
+- An expected account invitation is not present.
+- The employee cannot activate the account.
+
+Troubleshooting:
+1. Confirm the expected company email address.
+2. Check the appropriate inbox and approved filtered-mail locations.
+3. Confirm that the invitation was actually generated.
+4. Request a resend through the approved process if available.
+5. Escalate if the invitation cannot be generated or repeatedly fails to arrive.
+
+Do not use an unofficial invitation or forward an activation link to another person.
+
+8. PROBLEM: ACCESS WAS APPROVED BUT LOGIN STILL FAILS
+
+Symptoms:
+- The employee has an approved access request.
+- The service still rejects the login or reports insufficient permission.
+
+Possible causes:
+- Provisioning has not completed.
+- The wrong account is being used.
+- The permission was granted to a different account.
+- The system requires an additional activation step.
+
+Troubleshooting:
+1. Confirm the approved account.
+2. Confirm the requested system.
+3. Check the request status.
+4. Complete any activation instructions.
+5. Retry using the company account.
+6. Contact the system owner if the approved permission is not available.
+
+9. PROBLEM: ACCOUNT EXISTS BUT PROFILE INFORMATION IS INCORRECT
+
+Symptoms:
+- Name, department or other profile information is incorrect.
+- The employee appears under the wrong organizational information.
+
+Troubleshooting:
+1. Confirm the incorrect information.
+2. Check whether the service allows approved profile updates.
+3. If the profile is controlled centrally, contact the responsible owner.
+4. Do not create a duplicate account simply to correct profile information.
+
+10. PROBLEM: ACCOUNT WORKS ON ONE DEVICE BUT NOT ANOTHER
+
+Possible causes:
+- Different account is active on the second device.
+- Browser session is outdated.
+- Device configuration differs.
+- Authentication method is unavailable on the second device.
+
+Troubleshooting:
+1. Confirm the same company account is being used.
+2. Sign out of an incorrect account.
+3. Retry the approved login flow.
+4. Check the required authentication method.
+5. If the issue continues on only one device, provide device and application details when escalating.
+
+11. INFORMATION TO PROVIDE WHEN ESCALATING
+
+Provide:
+- Employee name or approved employee identifier.
+- Department and team.
+- System name.
+- Company account or username, but never the password.
+- Error message.
+- Time the problem occurred.
+- Steps already attempted.
+- Access-request reference when available.
+- Device or browser information when relevant.
+
+Never include:
+- Passwords.
+- MFA codes.
+- API keys.
+- Access tokens.
+- Private keys.
+
+12. WHEN TO ESCALATE
+
+Escalate when:
+- Account creation is incomplete after approval.
+- Password recovery does not work.
+- MFA recovery is unavailable.
+- The account remains locked.
+- Approved access is not reflected.
+- The issue may involve unauthorized access.
+- The employee cannot safely determine the next step.
+
+Security concerns should follow the company's Incident Reporting Process.
+
+13. CONTEXTBRIDGE AGENT USAGE
+
+The Onboarding Support Agent can use this document for questions such as:
+- "My company account has not been created. What should I do?"
+- "I cannot log in."
+- "My MFA is not working."
+- "I received an access approval but still cannot sign in."
+- "What information should I provide to IT?"
+
+The agent should provide documented troubleshooting steps and escalate when the problem exceeds the employee's authorized actions.
+
+The agent must never request or expose passwords, MFA codes, tokens or private keys.
+
+14. RELATION TO COMPANY KNOWLEDGE
+
+This document describes recurring account problems.
+
+The general approval and access workflow is defined by the company's Access Request Process.
+
+Security-related concerns should also use the Incident Reporting Process when applicable.
+
+Project-specific permissions are outside the scope of this document.
+
+15. DOCUMENT GOVERNANCE
+
+This is approved Company KB content. Updates must be reviewed by the responsible owner before becoming trusted knowledge.
+
+Last Reviewed: 2026-09
+Version: 1.0

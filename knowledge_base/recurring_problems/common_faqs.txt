@@ -1,91 +1,321 @@
-TITLE: Common Onboarding FAQs
+TITLE: Common Onboarding and Technical FAQs
+DOCUMENT TYPE: Company FAQ Knowledge
+SCOPE: All Departments
+STATUS: Approved
+OWNER: IT Operations + People Operations
+VERSION: 1.0
 
-TYPE: FAQ
-CATEGORY: GENERAL_ONBOARDING
-SCOPE: NEW_EMPLOYEES
+1. PURPOSE
 
-Q: What should I do first during onboarding?
+This document contains frequently asked general questions that new employees may have during onboarding and normal work.
 
-A:
-Start with your assigned onboarding path. Review the relevant
-company information, department information, project information,
-and assigned onboarding tasks.
+The answers are company-wide guidance. They are intentionally not tied to a particular project, repository, database or application.
 
-Q: Who determines my onboarding path?
+2. HOW DO I START MY ONBOARDING?
 
-A:
-The onboarding path is based on your employee context, including
-your department, role, project, and experience.
+Start with the onboarding instructions provided by the company and complete the required tasks in the order specified by the onboarding owner.
 
-Q: Where should I look for company-specific information?
+If a required task is blocked by missing access, follow the Access Request Process while continuing with other approved tasks that do not depend on the unavailable access.
 
-A:
-Use the approved Company Knowledge Base.
+3. WHO SHOULD I CONTACT IF I AM BLOCKED?
 
-Q: Where should I look for project-specific technical information?
+Use the responsible support channel defined for the problem.
 
-A:
-Use the relevant Project Knowledge Base.
+For account or access problems, use the approved IT or system-owner process.
 
-Q: Where should I look if I have a common setup problem?
+For security concerns, use the Incident Reporting Process.
 
-A:
-Check the approved Recurring Problems and FAQs knowledge.
+For project-specific technical questions, use the project support path defined by the relevant project documentation.
 
-Q: What should I do if the documentation does not answer my question?
+If you are unsure which team owns the issue, provide the system name, problem description and any available reference number.
 
-A:
-If the question is generic technical knowledge, the general
-technical support path may be used when applicable.
+4. HOW DO I REQUEST SYSTEM ACCESS?
 
-If the question requires company-specific or project-specific
-information that is not available, escalate to the appropriate
-senior employee with the relevant context.
+Use the approved company access-request mechanism.
 
-Q: What information should I include when asking for help?
-
-A:
 Include:
+- Your department and role.
+- System or resource needed.
+- Required permission.
+- Business reason.
+- Project or team when relevant.
+- Required date.
+- Manager or owner information when required.
 
-- Your department
-- Your role
-- Your project
-- The task you are working on
-- What you expected to happen
-- What actually happened
-- Error messages
-- What you already tried
+Do not request access simply because another employee has it. Access should match business need.
 
-Q: Should I follow generic internet instructions if they conflict
-with company documentation?
+5. WHAT IF MY ACCESS REQUEST IS STILL PENDING?
 
-A:
-Approved internal company or project knowledge has priority for
-company-specific processes and systems.
+Check the request status first.
 
-Q: Can I change project dependencies to fix an error?
+If the request is still waiting for approval, contact the appropriate approver according to the documented process.
 
-A:
-Do not arbitrarily change project dependencies. Follow the
-project's approved dependency procedure or escalate the issue.
+If approval is complete but access has not been provisioned, contact the responsible system owner or IT support.
 
-Q: What if I cannot access a required system?
+Do not submit repeated duplicate requests unless the responsible team instructs you to do so.
 
-A:
-Check the Account Access and System Access troubleshooting
-guidance. If access is still unavailable, use the approved
-access request/escalation process.
+6. WHAT SHOULD I DO IF I FORGOT MY PASSWORD?
 
-Q: What if I do not know who can help me?
+Use the company's approved password-reset process.
 
-A:
-Use the approved onboarding support or escalation process and
-provide the relevant context about your question or blocker.
+Do not ask a colleague for their password.
 
-Q: Can the AI assistant invent an answer when company information
-is missing?
+Do not create an unofficial workaround.
 
-A:
-No. Company-specific and project-specific information should be
-grounded in approved internal knowledge. If reliable approved
-information is unavailable, the issue should be escalated.
+If password recovery fails, contact the approved support channel and provide the error information without sharing the password.
+
+7. WHAT IF MFA IS NOT WORKING?
+
+Check that you are using the registered authentication method and follow the approved MFA recovery procedure.
+
+Do not disable security controls yourself.
+
+If the registered device or method is unavailable, use the company's documented recovery path or contact IT support.
+
+8. CAN I USE A PERSONAL ACCOUNT FOR COMPANY WORK?
+
+Company work should use the approved company accounts and services.
+
+A personal account should not be used to bypass company access controls or move company information outside approved systems.
+
+If the required company account is unavailable, report the access problem.
+
+9. CAN I SHARE MY ACCOUNT WITH A COLLEAGUE?
+
+No.
+
+Individual company accounts should be used by the assigned employee.
+
+Sharing credentials reduces accountability and can create security risks.
+
+If another employee needs access, they should request their own approved account or permission.
+
+10. WHERE SHOULD I STORE COMPANY CREDENTIALS?
+
+Use the approved company credential-management mechanism.
+
+Do not store passwords, access tokens or private keys in source code, public files, tickets or ordinary chat messages.
+
+11. WHAT SHOULD I DO IF I ACCIDENTALLY SHARE A PASSWORD OR TOKEN?
+
+Treat the credential as potentially exposed.
+
+Do not continue sharing it.
+
+Do not put the exposed secret into a ticket or chat message.
+
+Report the situation through the approved security process and follow the required credential rotation or revocation procedure.
+
+12. WHAT IS AN INCIDENT?
+
+An incident is an unexpected event that may negatively affect company systems, information, employees, customers or operations.
+
+Examples include suspected unauthorized access, exposed credentials, serious service failures and accidental disclosure of sensitive information.
+
+When in doubt about a potential security incident, follow the approved reporting process.
+
+13. WHEN SHOULD I REPORT AN INCIDENT?
+
+Report it as soon as reasonably possible.
+
+You do not need to know the complete root cause before reporting.
+
+Provide the facts you know and avoid unnecessary speculation.
+
+14. WHAT INFORMATION SHOULD I INCLUDE IN AN INCIDENT REPORT?
+
+Include:
+- What happened.
+- When it happened.
+- Affected system.
+- Expected behavior.
+- Actual behavior.
+- Error message.
+- Impact.
+- Actions already attempted.
+- Relevant references.
+
+Do not include passwords, MFA codes, API keys or private keys.
+
+15. WHAT SHOULD I DO IF A COMPANY SYSTEM IS DOWN?
+
+First determine whether the problem is local to your device or appears to affect other users.
+
+Check the approved company communication or status channel when available.
+
+If the outage is significant or you cannot determine the appropriate response, report it through the approved support or incident process.
+
+16. WHAT SHOULD I DO BEFORE MAKING A SIGNIFICANT CHANGE?
+
+Understand the proposed change, expected impact, testing requirements, implementation steps and recovery plan.
+
+Follow the applicable Change Management Process.
+
+Do not make an unapproved change to a controlled environment.
+
+17. WHAT IS A CHANGE REQUEST?
+
+A change request records a proposed modification to a shared system, service, configuration, data structure or business process.
+
+It normally includes the reason, impact, implementation approach, testing, verification and recovery information.
+
+18. DO ALL CHANGES REQUIRE THE SAME APPROVAL?
+
+No.
+
+Approval depends on the type, risk, environment and potential impact of the change.
+
+Standard, normal and emergency changes may follow different approved procedures.
+
+19. WHAT SHOULD I DO IF A CHANGE FAILS?
+
+Stop or limit further changes when appropriate.
+
+Assess the impact and follow the approved recovery or rollback procedure.
+
+Notify the responsible owner.
+
+If the failure causes an incident, also follow the Incident Reporting Process.
+
+20. CAN I FIX A PRODUCTION PROBLEM BY CHANGING CONFIGURATION DIRECTLY?
+
+Do not make an unapproved production change.
+
+Follow the approved incident and change procedures.
+
+Emergency changes may have a separate documented process when immediate action is required.
+
+21. WHAT SHOULD I DO IF I DO NOT UNDERSTAND AN ONBOARDING TASK?
+
+Review the task description and related approved company documentation.
+
+If the task is still unclear, ask the onboarding support channel or responsible owner.
+
+The ContextBridge Onboarding Support Agent can explain documented procedures and point to relevant knowledge.
+
+22. WHAT IF THE DOCUMENTATION SEEMS OUTDATED?
+
+Do not silently replace the documented procedure with an assumption.
+
+Report the outdated or conflicting information to the responsible owner.
+
+Use the currently approved documentation until the owner confirms an update.
+
+23. WHAT IF TWO COMPANY DOCUMENTS CONFLICT?
+
+Check the document owner, version and approval status.
+
+Use the more specific approved procedure when the conflict concerns a specific system or process.
+
+If the conflict cannot be resolved from the documentation, escalate to the responsible owner.
+
+24. CAN I CREATE MY OWN WORKAROUND?
+
+A workaround should not bypass company security, access controls or approved processes.
+
+If a documented workaround exists, follow it.
+
+Otherwise ask the responsible owner before introducing a new process for shared systems.
+
+25. WHAT INFORMATION SHOULD I INCLUDE WHEN ASKING FOR TECHNICAL HELP?
+
+Provide:
+- Clear description of the problem.
+- Expected result.
+- Actual result.
+- Error message.
+- Relevant environment.
+- Steps already attempted.
+- Time the issue occurred.
+- Related request or ticket reference.
+
+Do not include secrets.
+
+26. HOW SHOULD I COMMUNICATE A TECHNICAL PROBLEM?
+
+Be factual and concise.
+
+A useful message can follow:
+
+Problem:
+What is not working?
+
+Expected:
+What should happen?
+
+Actual:
+What happened instead?
+
+Context:
+What system or environment is affected?
+
+Attempts:
+What have you already tried?
+
+Impact:
+Who or what is blocked?
+
+27. SHOULD I REPORT EVERY ERROR?
+
+Not every minor error is a formal incident.
+
+Use the applicable support, troubleshooting or ticket process for normal technical problems.
+
+Report an incident when the event meets the company's incident criteria or creates a significant security, operational or business concern.
+
+28. CAN THE ONBOARDING AGENT APPROVE ACCESS?
+
+No.
+
+The agent can explain the documented access process and help identify the information required for a request.
+
+Approval remains with the authorized manager, system owner or other responsible approver.
+
+29. CAN THE ONBOARDING AGENT CHANGE MY SYSTEM PERMISSIONS?
+
+No.
+
+The agent can guide the employee through the approved process but should not invent or bypass authorization.
+
+30. WHAT DOES THE ONBOARDING SUPPORT AGENT KNOW?
+
+The agent retrieves approved company and, when appropriate, project knowledge through the RAG system.
+
+Company knowledge includes general policies, processes, recurring problems, FAQs and approved onboarding guidance.
+
+Project-specific answers require project knowledge.
+
+31. WHAT IF THE AGENT CANNOT FIND AN ANSWER?
+
+The agent should say that the available approved knowledge does not provide enough information rather than inventing an answer.
+
+The employee can then escalate to the appropriate human owner.
+
+32. WHAT IF I NEED A PROJECT-SPECIFIC ANSWER?
+
+A project-specific question should be answered using the relevant Project KB.
+
+For example, a general access process belongs to Company KB, while the exact permission required for a particular project repository belongs to Project KB.
+
+33. HOW DOES RAG HELP?
+
+RAG retrieves relevant approved knowledge before the agent generates an answer.
+
+This allows the agent to ground responses in company documentation instead of relying only on general model knowledge.
+
+34. WHAT SHOULD I DO IF I FIND A SECURITY ISSUE IN DOCUMENTATION?
+
+Do not publish sensitive details or credentials.
+
+Report the issue through the approved security process and identify the affected document without unnecessarily copying sensitive information.
+
+35. DOCUMENT GOVERNANCE
+
+These FAQs are approved Company KB content.
+
+FAQs should be updated when company processes change.
+
+If an answer becomes outdated, the responsible owner should review and update the knowledge before it is treated as current guidance.
+
+Last Reviewed: 2026-09
+Version: 1.0

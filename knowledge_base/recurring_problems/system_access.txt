@@ -1,51 +1,219 @@
-TITLE: System Access Problems
+TITLE: System Access Recurring Problems
+DOCUMENT TYPE: Company Recurring Problem Knowledge
+SCOPE: All Departments
+STATUS: Approved
+OWNER: IT Operations
+VERSION: 1.0
 
-TYPE: RECURRING_PROBLEM
-CATEGORY: SYSTEM_ACCESS
-SCOPE: ALL_EMPLOYEES
+1. PURPOSE
 
-PROBLEM:
-Employee has an account but cannot access a required internal
-system.
+This document covers recurring problems where an employee has a company account but cannot access a required system or resource.
 
-EXAMPLES:
+It focuses on general system-access troubleshooting.
 
-- Jira
-- Git repository
-- Internal dashboard
-- Database
-- Cloud platform
-- Internal application
-- Documentation system
+It does not define project-specific permissions or contain sensitive credentials.
 
-COMMON_SYMPTOMS:
+2. PROBLEM: ACCESS DENIED
 
-- Permission denied
-- Unauthorized
-- Forbidden
-- Repository unavailable
-- Resource not found
-- Missing project membership
+Symptoms:
+- System reports "Access Denied", "Forbidden", "Unauthorized" or similar.
+- Employee can sign in but cannot open a resource.
 
-TROUBLESHOOTING:
+Possible causes:
+- Permission has not been granted.
+- Wrong account is being used.
+- Request is still pending.
+- Employee is not authorized for the resource.
+- Permission provisioning has not completed.
 
-1. Confirm the system is the correct system for the employee's role.
+Troubleshooting:
+1. Confirm the account currently in use.
+2. Confirm the exact resource.
+3. Check the access request status.
+4. Confirm whether approval was completed.
+5. Retry after the documented provisioning period.
+6. Contact the responsible system owner if approved access is still unavailable.
 
-2. Confirm the employee has an active company account.
+3. PROBLEM: ACCESS REQUEST PENDING
 
-3. Confirm the employee is assigned to the correct team/project.
+Symptoms:
+- Request remains in pending status.
+- Employee is waiting for access required for onboarding.
 
-4. Check whether additional approval is required.
+Steps:
+1. Check the request reference.
+2. Identify the current approval stage.
+3. Contact the responsible approver if the process allows it.
+4. Do not create duplicate requests without guidance.
 
-5. Check whether the requested permission has already been granted.
+4. PROBLEM: ACCESS APPROVED BUT NOT PROVISIONED
 
-6. Retry after confirmed permission changes.
+Symptoms:
+- Approval is complete.
+- Employee still cannot access the system.
 
-7. Escalate if access remains unavailable.
+Troubleshooting:
+1. Confirm the approved account.
+2. Confirm the requested permission.
+3. Check whether provisioning is complete.
+4. Complete any required activation.
+5. Escalate to the system owner if the approved access is missing.
 
-SECURITY:
-Employees must not attempt to bypass system permissions.
+5. PROBLEM: WRONG PERMISSION LEVEL
 
-APPROVED_SOLUTION:
-Access must be provided through the approved company access
-management process.
+Symptoms:
+- Employee can open a resource but cannot perform an expected action.
+- Employee has read access when another approved permission is required.
+
+Troubleshooting:
+1. Confirm the business task.
+2. Confirm the approved permission level.
+3. Check the access request.
+4. Request the appropriate permission through the approved process.
+
+Do not request administrator access simply because a task is inconvenient.
+
+6. PROBLEM: ACCESS WORKED BEFORE BUT NO LONGER WORKS
+
+Possible causes:
+- Permission changed.
+- Role or team changed.
+- Account status changed.
+- Resource ownership changed.
+- Temporary access expired.
+
+Troubleshooting:
+1. Confirm the last time access worked.
+2. Check whether role or team changed.
+3. Check whether the access was temporary.
+4. Review the current access request or authorization.
+5. Escalate if required access was removed unexpectedly.
+
+7. PROBLEM: RESOURCE NOT VISIBLE
+
+Symptoms:
+- Employee signs in successfully but cannot find the expected resource.
+
+Possible causes:
+- Resource is outside the employee's scope.
+- Permission is missing.
+- Wrong organization or workspace is selected.
+- Resource was moved or renamed.
+
+Troubleshooting:
+1. Confirm the correct account.
+2. Confirm the expected resource name.
+3. Check approved documentation.
+4. Confirm whether the employee should have access.
+5. Contact the responsible owner if necessary.
+
+8. PROBLEM: ACCESS EXPIRED
+
+Symptoms:
+- Previously available access suddenly stops working.
+- System indicates that access or authorization has expired.
+
+Troubleshooting:
+1. Determine whether access was temporary.
+2. Check the expiration or review status.
+3. If access is still required, submit the approved renewal request.
+4. Do not attempt to bypass the expiration.
+
+9. PROBLEM: ACCESS DIFFERS BETWEEN ENVIRONMENTS
+
+An employee may have access to one approved environment but not another.
+
+Do not assume that access to one environment automatically grants access to another.
+
+Confirm:
+- Environment.
+- Resource.
+- Approved permission.
+- Responsible owner.
+
+Production, testing and development environments may have different access requirements.
+
+10. PROBLEM: SYSTEM SESSION OR LOGIN STATE
+
+Symptoms:
+- Employee has permission but the system continues to show an old account or authorization state.
+
+Safe checks:
+1. Confirm the current account.
+2. Sign out and sign in again using the approved account.
+3. Retry the operation.
+4. If the system uses browser sessions, follow the approved session-reset procedure.
+5. Escalate if the authorization state remains incorrect.
+
+11. PROBLEM: ACCESS BLOCKED AFTER ROLE CHANGE
+
+When an employee changes role, team or responsibilities, permissions may change.
+
+The employee should:
+1. Confirm the new role information.
+2. Identify which access is required.
+3. Submit or update the appropriate request.
+4. Allow the responsible owner to review permissions.
+
+Do not retain or seek unnecessary access from the previous role.
+
+12. INFORMATION TO PROVIDE WHEN ESCALATING
+
+Provide:
+- Employee or approved identifier.
+- Department/team.
+- System name.
+- Resource name.
+- Account used.
+- Requested permission.
+- Current behavior.
+- Error message.
+- Request reference.
+- Time the issue occurred.
+
+Never include:
+- Passwords.
+- MFA codes.
+- Tokens.
+- Private keys.
+
+13. WHEN TO ESCALATE
+
+Escalate when:
+- Approved access is not available.
+- Permission is incorrect.
+- Access disappears unexpectedly.
+- A system owner cannot be identified.
+- The issue may indicate unauthorized access.
+- A security control appears to be malfunctioning.
+
+Security concerns should follow the Incident Reporting Process.
+
+14. CONTEXTBRIDGE AGENT USAGE
+
+The Onboarding Support Agent can use this document for general questions such as:
+- Why does the system say access denied?
+- My request was approved but I still cannot access the system.
+- Why can I view something but not edit it?
+- What should I include when escalating an access problem?
+
+The agent should retrieve company access guidance first and use project-specific knowledge only when the question requires project-specific permissions.
+
+The agent cannot approve access or modify permissions.
+
+15. RELATION TO COMPANY PROCESSES
+
+The Access Request Process defines the general company workflow for requesting and approving access.
+
+This document focuses on troubleshooting recurring access problems.
+
+The Incident Reporting Process should be used when an access problem may represent a security incident.
+
+16. DOCUMENT GOVERNANCE
+
+This is approved Company KB content.
+
+System-specific access rules may be maintained by individual system owners and should be retrieved when applicable.
+
+Last Reviewed: 2026-09
+Version: 1.0
