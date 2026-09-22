@@ -1,0 +1,46 @@
+TITLE: Account Access Problems
+
+TYPE: RECURRING_PROBLEM
+CATEGORY: ACCOUNT_ACCESS
+SCOPE: ALL_EMPLOYEES
+
+PROBLEM:
+Employee cannot access a required company account.
+
+COMMON_SYMPTOMS:
+
+- Account has not been created.
+- Login credentials have not been received.
+- Account exists but access is denied.
+- Password reset is required.
+- Required permissions are missing.
+
+TROUBLESHOOTING:
+
+1. Confirm that the employee's account should already exist.
+
+2. Confirm that the correct company identity/account is being used.
+
+3. Check whether the employee received the required invitation.
+
+4. Verify whether the requested system requires additional approval.
+
+5. Verify that the employee belongs to the correct department,
+team, or project.
+
+6. If access is still unavailable, escalate through the approved
+access request process.
+
+REQUIRED_ESCALATION_INFORMATION:
+
+- Employee name/identifier
+- Department
+- Role
+- Project
+- System requiring access
+- Current error message
+- Date/time of access attempt
+
+APPROVED_SOLUTION:
+Follow the company's account provisioning and access request
+process. Do not bypass access controls.

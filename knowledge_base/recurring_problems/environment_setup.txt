@@ -1,0 +1,50 @@
+TITLE: Development Environment Setup Problems
+
+TYPE: RECURRING_PROBLEM
+CATEGORY: ENVIRONMENT_SETUP
+SCOPE: TECHNICAL_EMPLOYEES
+
+PROBLEM:
+Employee cannot successfully configure or run the required
+development environment.
+
+COMMON_SYMPTOMS:
+
+- Tool is not installed.
+- Incorrect tool version.
+- Dependency installation fails.
+- Environment variable is missing.
+- Required service is unavailable.
+- Application fails during local startup.
+
+TROUBLESHOOTING:
+
+1. Confirm the required tool versions.
+
+2. Confirm that the repository was cloned correctly.
+
+3. Confirm that dependencies were installed using the
+project-approved method.
+
+4. Check required environment variables.
+
+5. Check whether required local or external services are running.
+
+6. Review the project setup documentation.
+
+7. Check the approved recurring setup problems.
+
+8. If unresolved, escalate with the complete error message.
+
+DO NOT:
+
+- Guess missing credentials.
+- Use unauthorized credentials.
+- Commit secrets.
+- Change project configuration without understanding
+the impact.
+
+APPROVED_SOLUTION:
+Follow the project-specific environment setup instructions.
+If those instructions are unavailable or incomplete, escalate
+to the project owner or appropriate senior employee.

@@ -1,0 +1,51 @@
+TITLE: System Access Problems
+
+TYPE: RECURRING_PROBLEM
+CATEGORY: SYSTEM_ACCESS
+SCOPE: ALL_EMPLOYEES
+
+PROBLEM:
+Employee has an account but cannot access a required internal
+system.
+
+EXAMPLES:
+
+- Jira
+- Git repository
+- Internal dashboard
+- Database
+- Cloud platform
+- Internal application
+- Documentation system
+
+COMMON_SYMPTOMS:
+
+- Permission denied
+- Unauthorized
+- Forbidden
+- Repository unavailable
+- Resource not found
+- Missing project membership
+
+TROUBLESHOOTING:
+
+1. Confirm the system is the correct system for the employee's role.
+
+2. Confirm the employee has an active company account.
+
+3. Confirm the employee is assigned to the correct team/project.
+
+4. Check whether additional approval is required.
+
+5. Check whether the requested permission has already been granted.
+
+6. Retry after confirmed permission changes.
+
+7. Escalate if access remains unavailable.
+
+SECURITY:
+Employees must not attempt to bypass system permissions.
+
+APPROVED_SOLUTION:
+Access must be provided through the approved company access
+management process.

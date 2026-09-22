@@ -1,0 +1,50 @@
+TITLE: Dependency Installation Errors
+
+TYPE: RECURRING_PROBLEM
+CATEGORY: DEPENDENCIES
+SCOPE: TECHNICAL_EMPLOYEES
+
+PROBLEM:
+A required project dependency cannot be installed or the project
+fails because of dependency conflicts.
+
+COMMON_SYMPTOMS:
+
+- Package installation failure.
+- Version conflict.
+- Missing package.
+- Incompatible runtime version.
+- Dependency resolution failure.
+- Application starts but fails during import or execution.
+
+TROUBLESHOOTING:
+
+1. Check the required runtime version.
+
+2. Check the project's dependency file.
+
+3. Confirm that the employee is using the approved installation
+method.
+
+4. Create or activate the required virtual environment when
+applicable.
+
+5. Install dependencies using the project-approved process.
+
+6. Review known dependency issues for the project.
+
+7. Do not arbitrarily upgrade or downgrade dependencies without
+following project procedures.
+
+8. If unresolved, escalate the issue with:
+
+- Runtime version
+- Dependency version
+- Full error message
+- Installation command
+- Relevant project information
+
+APPROVED_SOLUTION:
+Use the versions and installation procedure documented by the
+project. Project-specific dependency requirements take priority
+over generic recommendations.

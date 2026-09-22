@@ -1,0 +1,91 @@
+TITLE: Common Onboarding FAQs
+
+TYPE: FAQ
+CATEGORY: GENERAL_ONBOARDING
+SCOPE: NEW_EMPLOYEES
+
+Q: What should I do first during onboarding?
+
+A:
+Start with your assigned onboarding path. Review the relevant
+company information, department information, project information,
+and assigned onboarding tasks.
+
+Q: Who determines my onboarding path?
+
+A:
+The onboarding path is based on your employee context, including
+your department, role, project, and experience.
+
+Q: Where should I look for company-specific information?
+
+A:
+Use the approved Company Knowledge Base.
+
+Q: Where should I look for project-specific technical information?
+
+A:
+Use the relevant Project Knowledge Base.
+
+Q: Where should I look if I have a common setup problem?
+
+A:
+Check the approved Recurring Problems and FAQs knowledge.
+
+Q: What should I do if the documentation does not answer my question?
+
+A:
+If the question is generic technical knowledge, the general
+technical support path may be used when applicable.
+
+If the question requires company-specific or project-specific
+information that is not available, escalate to the appropriate
+senior employee with the relevant context.
+
+Q: What information should I include when asking for help?
+
+A:
+Include:
+
+- Your department
+- Your role
+- Your project
+- The task you are working on
+- What you expected to happen
+- What actually happened
+- Error messages
+- What you already tried
+
+Q: Should I follow generic internet instructions if they conflict
+with company documentation?
+
+A:
+Approved internal company or project knowledge has priority for
+company-specific processes and systems.
+
+Q: Can I change project dependencies to fix an error?
+
+A:
+Do not arbitrarily change project dependencies. Follow the
+project's approved dependency procedure or escalate the issue.
+
+Q: What if I cannot access a required system?
+
+A:
+Check the Account Access and System Access troubleshooting
+guidance. If access is still unavailable, use the approved
+access request/escalation process.
+
+Q: What if I do not know who can help me?
+
+A:
+Use the approved onboarding support or escalation process and
+provide the relevant context about your question or blocker.
+
+Q: Can the AI assistant invent an answer when company information
+is missing?
+
+A:
+No. Company-specific and project-specific information should be
+grounded in approved internal knowledge. If reliable approved
+information is unavailable, the issue should be escalated.
