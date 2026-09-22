@@ -1,0 +1,10 @@
+TASK: Onboarding Process Simulation & Shadowing
+OBJECTIVE: Learn how to manage a new hire's onboarding flow from the HR side.
+
+STEPS:
+1. Shadow an HR Specialist during a Day 1 welcome orientation for a new joiner.
+2. Review a sample new hire's onboarding Jira ticket and ensure all provisioning steps are completed.
+3. Practice setting up an onboarding path template in the ContextBridge admin panel.
+4. Send a mock welcoming email and first-week schedule to a test user account.
+
+EXPECTED DELIVERABLE: Successfully configured mock onboarding workflow with verified task triggers.

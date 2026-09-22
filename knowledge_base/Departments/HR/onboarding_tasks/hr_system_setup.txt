@@ -1,0 +1,11 @@
+TASK: HR System & Profile Setup
+OBJECTIVE: Complete employee account creation and profile setup across internal platforms.
+
+STEPS:
+1. Log into the company HRIS using credentials sent via welcome email.
+2. Update personal details, emergency contact info, and bank account information.
+3. Upload required legal documentation (National ID/Passport copy, graduation certificate, tax forms).
+4. Verify system access to internal Slack/Teams channels and company email.
+
+EXPECTED DELIVERABLE: Fully updated employee profile status marked as 100% Complete in HRIS.
+------------------------------------------------------------

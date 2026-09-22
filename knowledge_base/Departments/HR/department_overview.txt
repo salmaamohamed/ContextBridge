@@ -1,0 +1,18 @@
+DEPARTMENT: Human Resources (HR)
+OVERVIEW:
+The Human Resources department manages the entire employee lifecycle at ContextBridge. 
+This includes talent acquisition, onboarding, performance management, compliance, 
+employee relations, and offboarding.
+
+KEY RESPONSIBILITIES:
+- Sourcing and recruiting top technical and non-technical talent.
+- Managing smooth onboarding experiences for fresh graduates, interns, and experienced hires.
+- Maintaining employee records, legal compliance, and internal HR policies.
+- Overseeing performance reviews, training programs, and career growth tracks.
+- Handling offboarding, exit interviews, and documentation.
+
+PRIMARY METRICS:
+- Time-to-hire & Cost-per-hire
+- Onboarding satisfaction score
+- Early turnover rate (< 90 days)
+- Employee retention & engagement score

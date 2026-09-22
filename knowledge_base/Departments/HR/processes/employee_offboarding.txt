@@ -1,0 +1,10 @@
+PROCESS: Employee Offboarding Process
+
+STEPS:
+1. Resignation / Notice: Employee or Manager submits formal notice to HR.
+2. Offboarding Schedule: HR confirms final working day, handover plan, and exit timeline.
+3. Knowledge Handover: Ensure documentation of ongoing projects and account transfer.
+4. Asset Return: Collect laptop, badges, cards, and access keys on or before final day.
+5. System Access Revocation: IT/HR revokes system, repo, email, and tool access immediately upon exit.
+6. Exit Interview: HR Specialist conducts exit interview to gather constructive feedback.
+7. Final Settlement: HR coordinates with Finance for final salary payout and documentation.

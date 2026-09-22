@@ -1,0 +1,10 @@
+TASK: Company Policy & Handbook Review
+OBJECTIVE: Understand company culture, code of conduct, working hours, and operational guidelines.
+
+STEPS:
+1. Read through the Company Employee Handbook.
+2. Review key policies: Remote Work Policy, Leave Policy, Data Privacy, and Information Security Code.
+3. Complete the brief 10-question compliance quiz on the learning portal.
+4. Sign the electronic acknowledgement form confirming understanding of company policies.
+
+EXPECTED DELIVERABLE: Submitted compliance quiz and signed policy acknowledgement.

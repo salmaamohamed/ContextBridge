@@ -1,0 +1,10 @@
+TOOL: Jira (HR Workspace)
+PURPOSE: Tracking HR tasks, onboarding requests, hardware provisioning, and process ticketing.
+
+USAGE IN HR:
+- Onboarding Ticket Workflow: Automatically generated ticket per new hire tracking IT setup, paperwork, and training.
+- Offboarding Ticket Workflow: Asset return, account deactivation, and exit checklists.
+- HR Service Desk: Employee requests for HR letters, policy clarifications, and benefit inquiries.
+
+BOARD LAYOUT:
+- To Do -> In Progress -> Pending Approval -> Done

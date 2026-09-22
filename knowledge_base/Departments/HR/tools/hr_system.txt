@@ -1,0 +1,12 @@
+TOOL: HRIS (Human Resources Information System)
+PURPOSE: Central database for managing employee profiles, payroll, leave requests, and documentation.
+
+CORE FEATURES:
+- Employee Profile Management (personal details, contract, salary history).
+- Leave & Attendance Management (time-off requests, sick leave, public holidays).
+- Performance Management Tracking.
+- HR Document Storage (contracts, IDs, tax forms).
+
+ACCESS PERMISSIONS:
+- HR Staff: Full Read/Write access.
+- Employees: Self-service portal access (View profile, request leaves, view payslips).

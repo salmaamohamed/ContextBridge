@@ -1,0 +1,12 @@
+TOOL: ATS (Applicant Tracking System)
+PURPOSE: Pipeline management tool for job postings, applicant tracking, and hiring workflows.
+
+CORE FEATURES:
+- Candidate profile management & resume parsing.
+- Automated email communication & interview scheduling.
+- Interview evaluation forms & scorecards.
+- Candidate pipeline analytics (time-to-hire, drop-off rate).
+
+ACCESS PERMISSIONS:
+- Recruiters & HR Specialists: Admin / Pipeline management access.
+- Hiring Managers: Review candidate resumes and submit scorecards for specific roles.

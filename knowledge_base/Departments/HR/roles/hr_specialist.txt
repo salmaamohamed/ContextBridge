@@ -1,0 +1,14 @@
+ROLE: HR Specialist
+DEPARTMENT: Human Resources
+
+RESPONSIBILITIES:
+- Handle day-to-day HR administrative operations and employee inquiries.
+- Coordinate the employee onboarding and offboarding workflows.
+- Maintain accuracy in HR systems, employment contracts, and documentation.
+- Assist in planning employee engagement initiatives and training programs.
+- Serve as the primary point of contact for company policy clarifications.
+
+REQUIRED SKILLS:
+- Deep knowledge of local labor laws and HR regulations.
+- Strong interpersonal, conflict resolution, and communication skills.
+- Proficiency with HR software (HRIS), ATS, and communication tools.

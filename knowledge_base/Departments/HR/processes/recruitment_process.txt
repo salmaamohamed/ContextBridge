@@ -1,0 +1,11 @@
+PROCESS: Recruitment Process
+
+STEPS:
+1. Requisition & Approval: Hiring manager submits requisition; HR approves budget & job description.
+2. Sourcing & Posting: Recruiter posts job on career site, LinkedIn, and external boards.
+3. Resume Screening: Recruiter reviews applicants against core requirements.
+4. Initial Screening: Recruiter conducts 15-30 min culture & background call.
+5. Technical/Department Assessment: Interview or practical test with team lead/senior.
+6. Final Interview: Culture fit & alignment discussion with HR Lead or Executive.
+7. Offer Proposal: Extended written offer, contract negotiation, and background check.
+8. Transition to Onboarding: Candidate signs offer; handover to Employee Onboarding team.

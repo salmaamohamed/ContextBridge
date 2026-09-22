@@ -1,0 +1,14 @@
+ROLE: Recruiter
+DEPARTMENT: Human Resources
+
+RESPONSIBILITIES:
+- Source qualified candidates through LinkedIn, job boards, and referral programs.
+- Screen incoming resumes and conduct preliminary phone/video interviews.
+- Schedule and coordinate technical interviews with hiring managers and team leads.
+- Manage interview feedback and ensure a positive candidate experience.
+- Maintain applicant pipelines across all open job requisitions.
+
+REQUIRED SKILLS:
+- Proven sourcing capabilities and active candidate outreach experience.
+- Strong candidate assessment and communication skills.
+- Familiarity with Applicant Tracking Systems (ATS).

@@ -1,0 +1,15 @@
+PROCESS: Employee Onboarding Process
+
+STEPS:
+1. Pre-Onboarding (Day -7 to Day 0):
+   - HR triggers ContextBridge system setup and sends welcome email.
+   - Prepare workspace, equipment, email account, and permissions.
+2. Day 1 - Orientation:
+   - HR welcome session, policy review, and administrative paperwork.
+   - Assign buddy/mentor and introduce to team.
+3. Week 1 - Core Training & Personalization:
+   - Employee completes ContextBridge personalized learning path based on role.
+   - Initial check-in with HR Specialist and direct supervisor.
+4. Month 1 to 3 - Integration & Assessment:
+   - Complete department-specific simulations and tasks.
+   - 30-60-90 day performance and onboarding check-ins.
