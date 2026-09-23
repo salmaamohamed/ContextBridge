@@ -3,7 +3,6 @@
 Agentic AI platform connecting employees with company knowledge, project/task
 context, and human expertise.
 
-## Week 1 scope
 
 Infra + Company/Project KB ingestion + embeddings + vector DB + retrieval
 evaluation. See `docs/architecture-decisions/` for the reasoning behind each
