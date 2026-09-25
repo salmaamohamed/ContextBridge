@@ -1,0 +1,3106 @@
+{
+  "overall": {
+    "Hit@1": 0.25,
+    "Hit@3": 0.5,
+    "Hit@5": 0.75,
+    "MRR@5": 0.3833333333333333,
+    "n": 128
+  },
+  "by_kb_type": {
+    "company": {
+      "Hit@1": 0.23684210526315788,
+      "Hit@3": 0.5,
+      "Hit@5": 0.7631578947368421,
+      "MRR@5": 0.37719298245614036,
+      "n": 38
+    },
+    "project": {
+      "Hit@1": 0.25,
+      "Hit@3": 0.5,
+      "Hit@5": 0.75,
+      "MRR@5": 0.3833333333333333,
+      "n": 4
+    },
+    "department": {
+      "Hit@1": 0.2558139534883721,
+      "Hit@3": 0.5,
+      "Hit@5": 0.7441860465116279,
+      "MRR@5": 0.386046511627907,
+      "n": 86
+    }
+  },
+  "rows": [
+    {
+      "id": "q001",
+      "question": "What information should I include when escalating an unresolved issue to a senior team member?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/general_processes/communication_and_escalation.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/company/general_processes/communication_and_escalation.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q002",
+      "question": "What are the steps I should follow before contacting a senior employee for a blocker?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/general_processes/communication_and_escalation.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/company/general_processes/communication_and_escalation.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q003",
+      "question": "What is the process for escalating an unresolved issue to a senior team member?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/general_processes/communication_and_escalation.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/company/general_processes/communication_and_escalation.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q004",
+      "question": "Am I allowed to install unapproved software on my company device or development environment?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/acceptable_use.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q005",
+      "question": "What is the policy regarding sharing API keys and access credentials with other employees?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/acceptable_use.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/company/policies/acceptable_use.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q006",
+      "question": "What should I do if I accidentally expose sensitive company information?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/acceptable_use.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/company/policies/acceptable_use.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q007",
+      "question": "What is the process for requesting access to a restricted system or resource?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/acceptable_use.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/company/policies/acceptable_use.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q008",
+      "question": "What should I do if I lose access to a required company system while working remotely?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/remote_work.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q009",
+      "question": "Is it acceptable to access confidential company information using an unsecured public network?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/remote_work.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/company/policies/remote_work.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q010",
+      "question": "How should I communicate my work progress and any blockers while working from home?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/remote_work.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/company/policies/remote_work.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q011",
+      "question": "What is the process for requesting remote work accommodations or equipment?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/policies/remote_work.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/company/policies/remote_work.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q012",
+      "question": "What are the specific expectations for me as a new employee during the onboarding period?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/professional_expectations/professional_expectations.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q013",
+      "question": "What should I do if I realize I cannot complete my assigned work within the agreed timeframe?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/professional_expectations/professional_expectations.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/company/professional_expectations/professional_expectations.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q014",
+      "question": "What is the professional expectation regarding handling blockers instead of remaining stuck?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/professional_expectations/professional_expectations.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/company/professional_expectations/professional_expectations.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q015",
+      "question": "What is the process for requesting additional resources or support when facing challenges in my work?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/professional_expectations/professional_expectations.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/company/professional_expectations/professional_expectations.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q016",
+      "question": "What should I do if I accidentally commit an API key or password to a code repository?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/security/security_baselines.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q017",
+      "question": "Am I allowed to store application secrets directly in the source code?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/security/security_baselines.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/company/security/security_baselines.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q018",
+      "question": "Which rules should I follow if my specific project has stricter security requirements than the general company guidelines?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/security/security_baselines.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/company/security/security_baselines.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q019",
+      "question": "What is the process for reporting a security incident or vulnerability?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/security/security_baselines.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/company/security/security_baselines.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q020",
+      "question": "What information and details should I receive from the team to properly set up my development environment?",
+      "kb_type": "project",
+      "expected": [
+        "knowledge_base/company/sop/development_environment_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q021",
+      "question": "What is the proper process if I face a blocker or an error while installing my project dependencies?",
+      "kb_type": "project",
+      "expected": [
+        "knowledge_base/company/sop/development_environment_setup.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/company/sop/development_environment_setup.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q022",
+      "question": "How do I know if my local development environment setup is fully completed and successful?",
+      "kb_type": "project",
+      "expected": [
+        "knowledge_base/company/sop/development_environment_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/company/sop/development_environment_setup.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q023",
+      "question": "What is the process for requesting additional support or resources if I encounter issues during my development environment setup?",
+      "kb_type": "project",
+      "expected": [
+        "knowledge_base/company/sop/development_environment_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/company/sop/development_environment_setup.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q024",
+      "question": "What is the standard sequence of steps for onboarding a new technical employee?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/sop/employee_onboarding.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q025",
+      "question": "What specific information must be included when creating a new employee's onboarding profile?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/sop/employee_onboarding.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/company/sop/employee_onboarding.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q026",
+      "question": "What factors and results are considered to determine if an employee has successfully completed their onboarding?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/sop/employee_onboarding.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/company/sop/employee_onboarding.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q027",
+      "question": "What is the process for requesting additional support or resources if an employee is struggling during their onboarding?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/company/sop/employee_onboarding.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/company/sop/employee_onboarding.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q028",
+      "question": "Which specific policies do I need to read during the company policy and handbook review task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q029",
+      "question": "What are the final deliverables I must submit to complete the company policy review task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q030",
+      "question": "How many questions are included in the compliance quiz on the learning portal?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q031",
+      "question": "What is the process for requesting additional support or resources if I am struggling with the company policy review task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q032",
+      "question": "Where can I find the login credentials to access the company HRIS for the first time?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q033",
+      "question": "What specific legal documents am I required to upload to my HR profile?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q034",
+      "question": "What is the expected deliverable to prove that I have finished setting up my HR profile?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q035",
+      "question": "What is the process for requesting additional support or resources if I am struggling with the HR system setup task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q036",
+      "question": "What is the main objective of the onboarding process simulation and shadowing task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q037",
+      "question": "Where should I practice setting up an onboarding path template during my HR training?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q038",
+      "question": "What is the expected deliverable for the onboarding simulation task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q039",
+      "question": "When should an employee return their company laptop and access badges during the offboarding process?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/employee_offboarding.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/processes/employee_offboarding.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q040",
+      "question": "What happens to my system, repository, and email access when I leave the company, and who handles it?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/employee_offboarding.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q041",
+      "question": "Which departments are responsible for coordinating the final salary payout and documentation?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/employee_offboarding.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/processes/employee_offboarding.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q042",
+      "question": "What tasks and preparations are completed during the pre-onboarding phase before my first day?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q043",
+      "question": "On which day of the onboarding process will I be assigned a buddy or mentor?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q044",
+      "question": "What kind of learning path and check-ins are expected during my first week?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q045",
+      "question": "What is the purpose and expected duration of the initial screening call during the recruitment process?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/recruitment_process.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/processes/recruitment_process.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q046",
+      "question": "Who is responsible for conducting the final interview, and what is the main focus of this discussion?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/recruitment_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/processes/recruitment_process.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q047",
+      "question": "What happens immediately after a candidate successfully signs the written job offer?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/processes/recruitment_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/processes/recruitment_process.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q048",
+      "question": "If an employee needs clarification on a company policy, who is the primary point of contact they should reach out to?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/hr_specialist.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q049",
+      "question": "What specific software systems and tools is an HR Specialist required to be proficient with?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/hr_specialist.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/roles/hr_specialist.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q050",
+      "question": "Which HR role is explicitly responsible for coordinating both the employee onboarding and offboarding workflows?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/hr_specialist.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/roles/hr_specialist.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q051",
+      "question": "Who is responsible for scheduling and coordinating technical interviews with team leads and hiring managers?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/recruiter.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/roles/recruiter.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q052",
+      "question": "Which specific channels should be used to source qualified candidates for open job positions?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/recruiter.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q053",
+      "question": "What type of software system must a Recruiter be familiar with to effectively manage candidate pipelines?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/recruiter.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/roles/recruiter.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q054",
+      "question": "Which HR role is responsible for building university partnership programs to hire fresh graduates and interns?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q055",
+      "question": "Who partners with executive leadership to forecast future headcount needs and set department budgets?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q056",
+      "question": "What specific expertise is required regarding market compensation and technical hiring trends for the Talent Acquisition Lead?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q057",
+      "question": "What specific actions can regular employees perform using the HRIS self-service portal?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/hr_system.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/tools/hr_system.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q058",
+      "question": "Which tool should I use if I need to submit a time-off or sick leave request?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/hr_system.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/tools/hr_system.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q059",
+      "question": "What types of legal or HR documents are officially stored in the HRIS?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/hr_system.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/tools/hr_system.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q060",
+      "question": "What type of employee requests can be submitted through the Jira HR Service Desk?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/jira.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q061",
+      "question": "How does the HR department track IT setup and paperwork for a new hire using Jira?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/jira.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/tools/jira.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q062",
+      "question": "What are the standard workflow statuses or columns used in the HR Jira board layout?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/jira.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/tools/jira.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q063",
+      "question": "What specific permissions do Hiring Managers have within the Applicant Tracking System?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/recruitment_system.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/tools/recruitment_system.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q064",
+      "question": "What specific hiring metrics and analytics can be tracked using the ATS candidate pipeline features?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/recruitment_system.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q065",
+      "question": "Which system is responsible for automating email communication and providing interview evaluation scorecards?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/tools/recruitment_system.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/HR/tools/recruitment_system.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q066",
+      "question": "What is the overall scope and main purpose of the Human Resources department at ContextBridge?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/department_overview.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/HR/department_overview.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q067",
+      "question": "Which specific groups of new employees does the HR department manage the onboarding experience for?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/department_overview.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/HR/department_overview.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q068",
+      "question": "What primary metrics are used by the HR department to measure hiring efficiency and employee retention?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/HR/department_overview.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "HR",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q069",
+      "question": "What specific security flaws and performance issues should I look for when inspecting the code diff during the training pull request?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q070",
+      "question": "How should I categorize my review comments when providing feedback on the pull request?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q071",
+      "question": "What should I do if I find myself focusing too much on formatting details instead of the code's logic during a review?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q072",
+      "question": "What specific accounts and credentials must I have before starting the software development environment setup task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q073",
+      "question": "Why is it strictly important for software engineers to establish a standardized local development environment?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q074",
+      "question": "Which specific core command-line utilities are required to be installed via the package manager during the initial workstation configuration?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q075",
+      "question": "What specific evidence of completion must be provided, and where should it be submitted for the code review onboarding task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q076",
+      "question": "What are the required prerequisites before starting the code review training task?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q077",
+      "question": "Under what specific condition should a newcomer reach out to a senior engineer during the code review process?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q078",
+      "question": "What specific screenshots and evidence must I provide to mark the repository cloning and local stack initialization task as complete?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q079",
+      "question": "What should I check if I encounter a 'Port already in use' error while trying to start my local Docker containers?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q080",
+      "question": "When is it appropriate to ask a senior engineer for help regarding database migration scripts?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q081",
+      "question": "What specific steps and checks must a pull request author complete before requesting a peer review from a colleague?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/code_review.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/processes/code_review.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q082",
+      "question": "If a technical disagreement arises during a code review and the comment thread exceeds three messages, what is the recommended next step to resolve it?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/code_review.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/processes/code_review.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q083",
+      "question": "What does the 'Rubber-Stamping' anti-pattern mean in the context of code reviews, and why should it be avoided?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/code_review.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/processes/code_review.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q084",
+      "question": "Are manual software deployments from local terminals allowed in production environments?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/deployment_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q085",
+      "question": "What specific error rate condition will trigger an automatic deployment rollback during a production release?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/deployment_process.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/processes/deployment_process.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q086",
+      "question": "Under what specific exception is a Friday afternoon production deployment permitted?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/deployment_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/processes/deployment_process.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q087",
+      "question": "What specific criteria must a ticket meet to satisfy the 'Definition of Ready' before it can enter an active sprint?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/development_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/processes/development_process.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q088",
+      "question": "What strict naming convention must engineers follow when creating new feature or bugfix branches?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/development_process.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q089",
+      "question": "Why are monolithic pull requests considered an anti-pattern, and what is the maximum recommended size for a pull request?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/processes/development_process.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/processes/development_process.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q090",
+      "question": "What is the 'N+1 Query Problem', and why is it considered a critical anti-pattern for backend engineers to avoid?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/backend_engineer.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/roles/backend_engineer.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q091",
+      "question": "What specific tasks is a new backend engineer expected to accomplish during their second week of the onboarding program?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/backend_engineer.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/roles/backend_engineer.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q092",
+      "question": "Under what specific conditions must a backend engineer reach out to a senior team member or tech lead for assistance?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/backend_engineer.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q093",
+      "question": "What specific visual evidence must a frontend engineer attach when submitting a pull request for a new UI feature?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/frontend_engineer.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/roles/frontend_engineer.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q094",
+      "question": "Why is 'prop drilling' considered an anti-pattern in frontend development, and what architectural approach should be used instead?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/frontend_engineer.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/roles/frontend_engineer.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q095",
+      "question": "Which specific Core Web Vitals are frontend engineers expected to monitor and optimize to ensure high performance?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/frontend_engineer.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/roles/frontend_engineer.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q096",
+      "question": "What specific responsibilities does a fullstack engineer have regarding deployment and infrastructure management at ContextBridge?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/fullstack_engineer.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q097",
+      "question": "What specific tasks is a new fullstack engineer expected to complete during their second week of the onboarding program?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/fullstack_engineer.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/roles/fullstack_engineer.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q098",
+      "question": "Why is attempting to tackle massive fullstack changes in a single monolithic pull request considered an anti-pattern?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/roles/fullstack_engineer.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/roles/fullstack_engineer.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q099",
+      "question": "For security purposes, why must application processes never run as the root user inside a container?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/docker.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/tools/docker.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q100",
+      "question": "How should I order the instructions within my Dockerfile to maximize layer build cache efficiency?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/docker.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q101",
+      "question": "What specific terminal command should be executed to reclaim disk space by removing unused Docker build cache, images, and volumes?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/docker.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/tools/docker.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q102",
+      "question": "What grammatical mood should be used in the subject line of a Git commit message, and what is the character limit?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/git.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/tools/git.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q103",
+      "question": "Why is executing a force push on the shared main branch strictly prohibited at ContextBridge?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/git.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/tools/git.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q104",
+      "question": "Which specific terminal command should be run to undo the last commit while keeping the modified files safely in the working directory?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/git.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q105",
+      "question": "When should an engineer open a pull request specifically as a 'Draft PR' instead of a standard pull request?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/github.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/tools/github.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q106",
+      "question": "What is the maximum allowed expiration timeframe for Personal Access Tokens (PATs) created for the GitHub organization?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/github.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/tools/github.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q107",
+      "question": "Which specific terminal command should be executed to verify SSH key authentication if a 'Permission Denied' error occurs while trying to push or clone?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/github.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/tools/github.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q108",
+      "question": "What specific statuses does a ticket transition through in the ContextBridge Jira workflow between 'Backlog' and 'Done'?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/jira.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q109",
+      "question": "How must engineers link their GitHub feature branches and pull requests to ensure automatic status transitions in Jira?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/jira.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/tools/jira.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q110",
+      "question": "What is the 'Zombie Tickets' anti-pattern in Jira, and what is the proper way to handle tickets to avoid it?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/tools/jira.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/Departments/software/tools/jira.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q111",
+      "question": "What are the specific targets for the production incident rate and test coverage used to measure success in the Software Engineering department?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/department_overview.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/Departments/software/department_overview.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q112",
+      "question": "What is the Jira project key for the Software Engineering department, and what is their daily standup schedule?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/department_overview.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q113",
+      "question": "What are the exact timeline expectations for a new employee regarding their environment setup and submitting their first real contribution?",
+      "kb_type": "department",
+      "expected": [
+        "knowledge_base/Departments/software/department_overview.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/Departments/software/department_overview.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": "software",
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q114",
+      "question": "What are the possible causes if an employee's company account has not been created yet?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/access/account_access.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/recurring_problems/access/account_access.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q115",
+      "question": "What troubleshooting steps should an employee follow if their company account is locked?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/access/account_access.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/recurring_problems/access/account_access.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q116",
+      "question": "What sensitive information must the ContextBridge onboarding support agent never request or expose from an employee?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/access/account_access.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q117",
+      "question": "What troubleshooting steps should I follow if I receive an 'Access Denied' or 'Forbidden' error even though I am successfully signed in?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/access/system_access.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/recurring_problems/access/system_access.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q118",
+      "question": "What should I do if my previously approved system access suddenly stops working or indicates that it has expired?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/access/system_access.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/recurring_problems/access/system_access.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q119",
+      "question": "What exact details must I provide, and what sensitive information must I never include, when escalating a system access issue?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/access/system_access.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/recurring_problems/access/system_access.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q120",
+      "question": "What specific configuration and environment elements should be compared if a development environment works for one employee but fails for another?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/environment/dependency_errors.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q121",
+      "question": "What exact factors must an employee consider before introducing a new package dependency into shared or production software?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/environment/dependency_errors.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/recurring_problems/environment/dependency_errors.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q122",
+      "question": "If a package installation requires compilation and the build fails, what troubleshooting steps should be followed to resolve the missing compiler tools?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/environment/dependency_errors.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/recurring_problems/environment/dependency_errors.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q123",
+      "question": "What is the strict rule regarding the handling of real secrets when troubleshooting missing environment variables or configuration files?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/environment/environment_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/recurring_problems/environment/environment_setup.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q124",
+      "question": "What specific precautions must an employee take before executing a clean environment reset to fix an inconsistent local state?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/environment/environment_setup.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    },
+    {
+      "id": "q125",
+      "question": "How should the ContextBridge Onboarding Support Agent differentiate between providing Company-wide setup guidance versus Project-specific setup instructions?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/recurring_problems/environment/environment_setup.txt"
+      ],
+      "retrieved": [
+        "knowledge_base/recurring_problems/environment/environment_setup.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 1,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 1.0
+    },
+    {
+      "id": "q126",
+      "question": "What immediate actions should an employee take, and what should they avoid doing, if they accidentally share a password or access token?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/faq/common_onboarding_faq.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "knowledge_base/faq/common_onboarding_faq.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": 3,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "q127",
+      "question": "What is the recommended factual format or structure for effectively communicating a technical problem to get help?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/faq/common_onboarding_faq.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "knowledge_base/faq/common_onboarding_faq.txt"
+      ],
+      "rank": 5,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "rr": 0.2
+    },
+    {
+      "id": "q128",
+      "question": "How exactly must the ContextBridge Onboarding Support Agent respond if it cannot find a sufficient answer within the approved knowledge base?",
+      "kb_type": "company",
+      "expected": [
+        "knowledge_base/faq/common_onboarding_faq.txt"
+      ],
+      "retrieved": [
+        "dummy/other_0.txt",
+        "dummy/other_1.txt",
+        "dummy/other_2.txt",
+        "dummy/other_3.txt",
+        "dummy/other_4.txt"
+      ],
+      "rank": null,
+      "filters": {
+        "department": null,
+        "project": null
+      },
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 0,
+      "rr": 0.0
+    }
+  ]
+}

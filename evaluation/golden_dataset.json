@@ -1,0 +1,871 @@
+[
+  {
+    "question": "What information should I include when escalating an unresolved issue to a senior team member?",
+    "expected_source": "knowledge_base/company/general_processes/communication_and_escalation.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What are the steps I should follow before contacting a senior employee for a blocker?",
+    "expected_source": "knowledge_base/company/general_processes/communication_and_escalation.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  }, 
+  {
+    "question": "What is the process for escalating an unresolved issue to a senior team member?",
+    "expected_source": "knowledge_base/company/general_processes/communication_and_escalation.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },{
+    "question": "Am I allowed to install unapproved software on my company device or development environment?",
+    "expected_source": "knowledge_base/company/policies/acceptable_use.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the policy regarding sharing API keys and access credentials with other employees?",
+    "expected_source": "knowledge_base/company/policies/acceptable_use.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What should I do if I accidentally expose sensitive company information?",
+    "expected_source": "knowledge_base/company/policies/acceptable_use.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for requesting access to a restricted system or resource?",
+    "expected_source": "knowledge_base/company/policies/acceptable_use.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },{
+    "question": "What should I do if I lose access to a required company system while working remotely?",
+    "expected_source": "knowledge_base/company/policies/remote_work.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "Is it acceptable to access confidential company information using an unsecured public network?",
+    "expected_source": "knowledge_base/company/policies/remote_work.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "How should I communicate my work progress and any blockers while working from home?",
+    "expected_source": "knowledge_base/company/policies/remote_work.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for requesting remote work accommodations or equipment?",
+    "expected_source": "knowledge_base/company/policies/remote_work.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },{
+    "question": "What are the specific expectations for me as a new employee during the onboarding period?",
+    "expected_source": "knowledge_base/company/professional_expectations/professional_expectations.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What should I do if I realize I cannot complete my assigned work within the agreed timeframe?",
+    "expected_source": "knowledge_base/company/professional_expectations/professional_expectations.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the professional expectation regarding handling blockers instead of remaining stuck?",
+    "expected_source": "knowledge_base/company/professional_expectations/professional_expectations.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for requesting additional resources or support when facing challenges in my work?",
+    "expected_source": "knowledge_base/company/professional_expectations/professional_expectations.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },{
+    "question": "What should I do if I accidentally commit an API key or password to a code repository?",
+    "expected_source": "knowledge_base/company/security/security_baselines.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "Am I allowed to store application secrets directly in the source code?",
+    "expected_source": "knowledge_base/company/security/security_baselines.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "Which rules should I follow if my specific project has stricter security requirements than the general company guidelines?",
+    "expected_source": "knowledge_base/company/security/security_baselines.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for reporting a security incident or vulnerability?",
+    "expected_source": "knowledge_base/company/security/security_baselines.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },{
+    "question": "What information and details should I receive from the team to properly set up my development environment?",
+    "expected_source": "knowledge_base/company/sop/development_environment_setup.txt",
+    "kb_type": "project",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What is the proper process if I face a blocker or an error while installing my project dependencies?",
+    "expected_source": "knowledge_base/company/sop/development_environment_setup.txt",
+    "kb_type": "project",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "How do I know if my local development environment setup is fully completed and successful?",
+    "expected_source": "knowledge_base/company/sop/development_environment_setup.txt",
+    "kb_type": "project",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for requesting additional support or resources if I encounter issues during my development environment setup?",
+    "expected_source": "knowledge_base/company/sop/development_environment_setup.txt",
+    "kb_type": "project",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "What is the standard sequence of steps for onboarding a new technical employee?",
+    "expected_source": "knowledge_base/company/sop/employee_onboarding.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What specific information must be included when creating a new employee's onboarding profile?",
+    "expected_source": "knowledge_base/company/sop/employee_onboarding.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What factors and results are considered to determine if an employee has successfully completed their onboarding?",
+    "expected_source": "knowledge_base/company/sop/employee_onboarding.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for requesting additional support or resources if an employee is struggling during their onboarding?",
+    "expected_source": "knowledge_base/company/sop/employee_onboarding.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },{
+    "question": "Which specific policies do I need to read during the company policy and handbook review task?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What are the final deliverables I must submit to complete the company policy review task?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "How many questions are included in the compliance quiz on the learning portal?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for requesting additional support or resources if I am struggling with the company policy review task?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/company_policy_review.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "Where can I find the login credentials to access the company HRIS for the first time?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What specific legal documents am I required to upload to my HR profile?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What is the expected deliverable to prove that I have finished setting up my HR profile?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What is the process for requesting additional support or resources if I am struggling with the HR system setup task?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/hr_system_setup.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What is the main objective of the onboarding process simulation and shadowing task?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Where should I practice setting up an onboarding path template during my HR training?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What is the expected deliverable for the onboarding simulation task?",
+    "expected_source": "knowledge_base/Departments/HR/onboarding_tasks/onboarding_process_task.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "When should an employee return their company laptop and access badges during the offboarding process?",
+    "expected_source": "knowledge_base/Departments/HR/processes/employee_offboarding.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What happens to my system, repository, and email access when I leave the company, and who handles it?",
+    "expected_source": "knowledge_base/Departments/HR/processes/employee_offboarding.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Which departments are responsible for coordinating the final salary payout and documentation?",
+    "expected_source": "knowledge_base/Departments/HR/processes/employee_offboarding.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What tasks and preparations are completed during the pre-onboarding phase before my first day?",
+    "expected_source": "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "On which day of the onboarding process will I be assigned a buddy or mentor?",
+    "expected_source": "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What kind of learning path and check-ins are expected during my first week?",
+    "expected_source": "knowledge_base/Departments/HR/processes/employee_onboarding_process.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What is the purpose and expected duration of the initial screening call during the recruitment process?",
+    "expected_source": "knowledge_base/Departments/HR/processes/recruitment_process.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Who is responsible for conducting the final interview, and what is the main focus of this discussion?",
+    "expected_source": "knowledge_base/Departments/HR/processes/recruitment_process.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What happens immediately after a candidate successfully signs the written job offer?",
+    "expected_source": "knowledge_base/Departments/HR/processes/recruitment_process.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "If an employee needs clarification on a company policy, who is the primary point of contact they should reach out to?",
+    "expected_source": "knowledge_base/Departments/HR/roles/hr_specialist.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What specific software systems and tools is an HR Specialist required to be proficient with?",
+    "expected_source": "knowledge_base/Departments/HR/roles/hr_specialist.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Which HR role is explicitly responsible for coordinating both the employee onboarding and offboarding workflows?",
+    "expected_source": "knowledge_base/Departments/HR/roles/hr_specialist.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "Who is responsible for scheduling and coordinating technical interviews with team leads and hiring managers?",
+    "expected_source": "knowledge_base/Departments/HR/roles/recruiter.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Which specific channels should be used to source qualified candidates for open job positions?",
+    "expected_source": "knowledge_base/Departments/HR/roles/recruiter.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What type of software system must a Recruiter be familiar with to effectively manage candidate pipelines?",
+    "expected_source": "knowledge_base/Departments/HR/roles/recruiter.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "Which HR role is responsible for building university partnership programs to hire fresh graduates and interns?",
+    "expected_source": "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Who partners with executive leadership to forecast future headcount needs and set department budgets?",
+    "expected_source": "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What specific expertise is required regarding market compensation and technical hiring trends for the Talent Acquisition Lead?",
+    "expected_source": "knowledge_base/Departments/HR/roles/talent_acquisition_manager.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What specific actions can regular employees perform using the HRIS self-service portal?",
+    "expected_source": "knowledge_base/Departments/HR/tools/hr_system.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Which tool should I use if I need to submit a time-off or sick leave request?",
+    "expected_source": "knowledge_base/Departments/HR/tools/hr_system.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What types of legal or HR documents are officially stored in the HRIS?",
+    "expected_source": "knowledge_base/Departments/HR/tools/hr_system.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What type of employee requests can be submitted through the Jira HR Service Desk?",
+    "expected_source": "knowledge_base/Departments/HR/tools/jira.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "How does the HR department track IT setup and paperwork for a new hire using Jira?",
+    "expected_source": "knowledge_base/Departments/HR/tools/jira.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What are the standard workflow statuses or columns used in the HR Jira board layout?",
+    "expected_source": "knowledge_base/Departments/HR/tools/jira.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What specific permissions do Hiring Managers have within the Applicant Tracking System?",
+    "expected_source": "knowledge_base/Departments/HR/tools/recruitment_system.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What specific hiring metrics and analytics can be tracked using the ATS candidate pipeline features?",
+    "expected_source": "knowledge_base/Departments/HR/tools/recruitment_system.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Which system is responsible for automating email communication and providing interview evaluation scorecards?",
+    "expected_source": "knowledge_base/Departments/HR/tools/recruitment_system.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What is the overall scope and main purpose of the Human Resources department at ContextBridge?",
+    "expected_source": "knowledge_base/Departments/HR/department_overview.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "Which specific groups of new employees does the HR department manage the onboarding experience for?",
+    "expected_source": "knowledge_base/Departments/HR/department_overview.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },
+  {
+    "question": "What primary metrics are used by the HR department to measure hiring efficiency and employee retention?",
+    "expected_source": "knowledge_base/Departments/HR/department_overview.txt",
+    "kb_type": "department",
+    "department": "HR",
+    "project": "none"
+  },{
+    "question": "What specific security flaws and performance issues should I look for when inspecting the code diff during the training pull request?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "How should I categorize my review comments when providing feedback on the pull request?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What should I do if I find myself focusing too much on formatting details instead of the code's logic during a review?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/code_review_task.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "What specific accounts and credentials must I have before starting the software development environment setup task?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Why is it strictly important for software engineers to establish a standardized local development environment?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Which specific core command-line utilities are required to be installed via the package manager during the initial workstation configuration?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/environment_setup.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What specific evidence of completion must be provided, and where should it be submitted for the code review onboarding task?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What are the required prerequisites before starting the code review training task?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Under what specific condition should a newcomer reach out to a senior engineer during the code review process?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/first_ticket.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What specific screenshots and evidence must I provide to mark the repository cloning and local stack initialization task as complete?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What should I check if I encounter a 'Port already in use' error while trying to start my local Docker containers?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "When is it appropriate to ask a senior engineer for help regarding database migration scripts?",
+    "expected_source": "knowledge_base/Departments/software/onboarding_tasks/repository_setup.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "What specific steps and checks must a pull request author complete before requesting a peer review from a colleague?",
+    "expected_source": "knowledge_base/Departments/software/processes/code_review.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "If a technical disagreement arises during a code review and the comment thread exceeds three messages, what is the recommended next step to resolve it?",
+    "expected_source": "knowledge_base/Departments/software/processes/code_review.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What does the 'Rubber-Stamping' anti-pattern mean in the context of code reviews, and why should it be avoided?",
+    "expected_source": "knowledge_base/Departments/software/processes/code_review.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "Are manual software deployments from local terminals allowed in production environments?",
+    "expected_source": "knowledge_base/Departments/software/processes/deployment_process.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What specific error rate condition will trigger an automatic deployment rollback during a production release?",
+    "expected_source": "knowledge_base/Departments/software/processes/deployment_process.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Under what specific exception is a Friday afternoon production deployment permitted?",
+    "expected_source": "knowledge_base/Departments/software/processes/deployment_process.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "What specific criteria must a ticket meet to satisfy the 'Definition of Ready' before it can enter an active sprint?",
+    "expected_source": "knowledge_base/Departments/software/processes/development_process.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What strict naming convention must engineers follow when creating new feature or bugfix branches?",
+    "expected_source": "knowledge_base/Departments/software/processes/development_process.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Why are monolithic pull requests considered an anti-pattern, and what is the maximum recommended size for a pull request?",
+    "expected_source": "knowledge_base/Departments/software/processes/development_process.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "What is the 'N+1 Query Problem', and why is it considered a critical anti-pattern for backend engineers to avoid?",
+    "expected_source": "knowledge_base/Departments/software/roles/backend_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What specific tasks is a new backend engineer expected to accomplish during their second week of the onboarding program?",
+    "expected_source": "knowledge_base/Departments/software/roles/backend_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Under what specific conditions must a backend engineer reach out to a senior team member or tech lead for assistance?",
+    "expected_source": "knowledge_base/Departments/software/roles/backend_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "What specific visual evidence must a frontend engineer attach when submitting a pull request for a new UI feature?",
+    "expected_source": "knowledge_base/Departments/software/roles/frontend_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Why is 'prop drilling' considered an anti-pattern in frontend development, and what architectural approach should be used instead?",
+    "expected_source": "knowledge_base/Departments/software/roles/frontend_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Which specific Core Web Vitals are frontend engineers expected to monitor and optimize to ensure high performance?",
+    "expected_source": "knowledge_base/Departments/software/roles/frontend_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },{
+    "question": "What specific responsibilities does a fullstack engineer have regarding deployment and infrastructure management at ContextBridge?",
+    "expected_source": "knowledge_base/Departments/software/roles/fullstack_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What specific tasks is a new fullstack engineer expected to complete during their second week of the onboarding program?",
+    "expected_source": "knowledge_base/Departments/software/roles/fullstack_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Why is attempting to tackle massive fullstack changes in a single monolithic pull request considered an anti-pattern?",
+    "expected_source": "knowledge_base/Departments/software/roles/fullstack_engineer.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "For security purposes, why must application processes never run as the root user inside a container?",
+    "expected_source": "knowledge_base/Departments/software/tools/docker.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "How should I order the instructions within my Dockerfile to maximize layer build cache efficiency?",
+    "expected_source": "knowledge_base/Departments/software/tools/docker.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What specific terminal command should be executed to reclaim disk space by removing unused Docker build cache, images, and volumes?",
+    "expected_source": "knowledge_base/Departments/software/tools/docker.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What grammatical mood should be used in the subject line of a Git commit message, and what is the character limit?",
+    "expected_source": "knowledge_base/Departments/software/tools/git.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Why is executing a force push on the shared main branch strictly prohibited at ContextBridge?",
+    "expected_source": "knowledge_base/Departments/software/tools/git.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Which specific terminal command should be run to undo the last commit while keeping the modified files safely in the working directory?",
+    "expected_source": "knowledge_base/Departments/software/tools/git.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "When should an engineer open a pull request specifically as a 'Draft PR' instead of a standard pull request?",
+    "expected_source": "knowledge_base/Departments/software/tools/github.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What is the maximum allowed expiration timeframe for Personal Access Tokens (PATs) created for the GitHub organization?",
+    "expected_source": "knowledge_base/Departments/software/tools/github.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "Which specific terminal command should be executed to verify SSH key authentication if a 'Permission Denied' error occurs while trying to push or clone?",
+    "expected_source": "knowledge_base/Departments/software/tools/github.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What specific statuses does a ticket transition through in the ContextBridge Jira workflow between 'Backlog' and 'Done'?",
+    "expected_source": "knowledge_base/Departments/software/tools/jira.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "How must engineers link their GitHub feature branches and pull requests to ensure automatic status transitions in Jira?",
+    "expected_source": "knowledge_base/Departments/software/tools/jira.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What is the 'Zombie Tickets' anti-pattern in Jira, and what is the proper way to handle tickets to avoid it?",
+    "expected_source": "knowledge_base/Departments/software/tools/jira.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What are the specific targets for the production incident rate and test coverage used to measure success in the Software Engineering department?",
+    "expected_source": "knowledge_base/Departments/software/department_overview.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What is the Jira project key for the Software Engineering department, and what is their daily standup schedule?",
+    "expected_source": "knowledge_base/Departments/software/department_overview.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What are the exact timeline expectations for a new employee regarding their environment setup and submitting their first real contribution?",
+    "expected_source": "knowledge_base/Departments/software/department_overview.txt",
+    "kb_type": "department",
+    "department": "software",
+    "project": "none"
+  },
+  {
+    "question": "What are the possible causes if an employee's company account has not been created yet?",
+    "expected_source": "knowledge_base/recurring_problems/access/account_access.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What troubleshooting steps should an employee follow if their company account is locked?",
+    "expected_source": "knowledge_base/recurring_problems/access/account_access.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What sensitive information must the ContextBridge onboarding support agent never request or expose from an employee?",
+    "expected_source": "knowledge_base/recurring_problems/access/account_access.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What troubleshooting steps should I follow if I receive an 'Access Denied' or 'Forbidden' error even though I am successfully signed in?",
+    "expected_source": "knowledge_base/recurring_problems/access/system_access.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What should I do if my previously approved system access suddenly stops working or indicates that it has expired?",
+    "expected_source": "knowledge_base/recurring_problems/access/system_access.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What exact details must I provide, and what sensitive information must I never include, when escalating a system access issue?",
+    "expected_source": "knowledge_base/recurring_problems/access/system_access.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What specific configuration and environment elements should be compared if a development environment works for one employee but fails for another?",
+    "expected_source": "knowledge_base/recurring_problems/environment/dependency_errors.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What exact factors must an employee consider before introducing a new package dependency into shared or production software?",
+    "expected_source": "knowledge_base/recurring_problems/environment/dependency_errors.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "If a package installation requires compilation and the build fails, what troubleshooting steps should be followed to resolve the missing compiler tools?",
+    "expected_source": "knowledge_base/recurring_problems/environment/dependency_errors.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the strict rule regarding the handling of real secrets when troubleshooting missing environment variables or configuration files?",
+    "expected_source": "knowledge_base/recurring_problems/environment/environment_setup.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What specific precautions must an employee take before executing a clean environment reset to fix an inconsistent local state?",
+    "expected_source": "knowledge_base/recurring_problems/environment/environment_setup.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "How should the ContextBridge Onboarding Support Agent differentiate between providing Company-wide setup guidance versus Project-specific setup instructions?",
+    "expected_source": "knowledge_base/recurring_problems/environment/environment_setup.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What immediate actions should an employee take, and what should they avoid doing, if they accidentally share a password or access token?",
+    "expected_source": "knowledge_base/faq/common_onboarding_faq.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "What is the recommended factual format or structure for effectively communicating a technical problem to get help?",
+    "expected_source": "knowledge_base/faq/common_onboarding_faq.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  },
+  {
+    "question": "How exactly must the ContextBridge Onboarding Support Agent respond if it cannot find a sufficient answer within the approved knowledge base?",
+    "expected_source": "knowledge_base/faq/common_onboarding_faq.txt",
+    "kb_type": "company",
+    "department": "all",
+    "project": "none"
+  }
+]
