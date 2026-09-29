@@ -9,3 +9,10 @@ celery
 qdrant-client
 python-dotenv
 unstructured
+transformers>=4.49,<5   # jina-clip-v2 remote code breaks on transformers 5 (clip_loss removed)
+torch
+einops
+timm
+pillow
+numpy
+pytest
